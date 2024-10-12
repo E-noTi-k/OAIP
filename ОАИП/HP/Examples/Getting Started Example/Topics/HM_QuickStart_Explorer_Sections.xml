@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2020-02-10T14:26:11.108+01:00" lasteditedby="Alexander" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Project Explorer Sections</title>
+  <keywords>
+    <keyword translate="true">Project Explorer<keyword translate="true">sections, about</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Project Explorer Sections</text></para>
+    </header>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">When you load a project its contents and settings are accessible in three main sections in the Project Explorer on the left: Table of Contents, Project Files and Configuration. </text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" style="font-weight:bold;" translate="true">The Table of Contents or &quot;TOC&quot;</text><text styleclass="Body Text" translate="true"> is a hierarchical tree of entries that define the structure of your project, organizing your topics into chapters and sub-chapters. Most TOC entries have direct links to topic files in the Project Files section. </text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" style="font-weight:bold;" translate="true">The Project Files section provides</text><text styleclass="Body Text" translate="true"> access to the actual files that make up your project. </text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" style="font-weight:bold;" translate="true">The Configuration section </text><text styleclass="Body Text" translate="true">stores all the settings associated with your project.</text></para>
+    <para styleclass="Body Text" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:0px; margin-left:0px; line-height:1.00; white-space:normal; page-break-inside:auto; page-break-after:auto;"></para>
+    <para styleclass="Body Text" style="text-align:center;"><table id="callout-table" rowcount="1" colcount="1" style="width:300px; cell-padding:4px; cell-spacing:0px; page-break-inside:auto; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#000000; border-style:solid; background-color:#eeeeee; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td style="width:300px; background-color:#ffffff;">
+          <para styleclass="Tip Heading"><conditional-text type="IFNOT" value="PDF"/><text styleclass="Tip Heading" translate="true">&#32;</text><image id="callout-icon-flag" src="flag_green.gif" scale="100.00%" styleclass="Tip Heading"></image><text styleclass="Tip Heading" translate="true"> &#160; &#160; &#160; &#160;</text><conditional-text type="END"/><text styleclass="Tip Heading" translate="true">Key Information</text></para>
+          <para styleclass="Tip Body"><text styleclass="Tip Body" translate="true">Topic entries in the TOC are actually links pointing to matching topic files in the Topic Files section. </text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[The Table of Contents section]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo"><table rowcount="1" colcount="2" style="width:auto; cell-padding:4px; cell-spacing:0px; page-break-inside:avoid; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+            <tr style="vertical-align:top">
+              <td style="width:248px;">
+                <para styleclass="Normal" style="text-align:center;"><image src="exp_tocsection.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+              </td>
+              <td style="vertical-align:middle;">
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">This is the &quot;structure&quot; of your topic. It consists of TOC &quot;entries&quot;, most &#160;which are linked to topic files in the Project Files section. Other TOC entries include empty TOC nodes/(&quot;chapters without text&quot;) without any content of their own, and entries that link to web pages or to other Help+Manual projects that you want to merge into the current project.</text></para>
+                <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The TOC section does not actually contain any topic files. It is really just a structured list of titles with links to the actual topic files, which are stored in the </text><text styleclass="T_Menu" translate="true">Project Files/Topic Files</text><text styleclass="Body Text" translate="true"> section of the Project Explorer.</text></para>
+              </td>
+            </tr>
+          </table></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You can </text><link displaytype="text" defaultstyle="true" type="topiclink" href="HM_QuickStart_AddTopics" styleclass="Body Text" translate="true">create new topic files</link><text styleclass="Body Text" translate="true"> by adding entries to the TOC. Doing this creates a TOC entry and a topic file, and links the entry to the topic file. You can also create topic files directly in the Topic Files section. Then the files do not have TOC entries. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text" translate="true">You can change the structure of your TOC by moving the entries around in the TOC tree, either with the mouse or with the blue arrow tools in </text><text styleclass="T_Menu" translate="true">Project &gt; Manage Topics</text><text styleclass="Body Text" translate="true">. Doing this just moves around the entries in the TOC </text><text styleclass="Body Text" style="font-family:Arial;" translate="true">–</text><text styleclass="Body Text" translate="true"> the topic files and other items to which the TOC entries link remain unchanged.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[The Project Files section]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text HowTo"><table rowcount="1" colcount="2" style="width:auto; cell-padding:4px; cell-spacing:0px; page-break-inside:avoid; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td style="width:265px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="exp_projfiles.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">This section lists all the topic files in your project and &quot;Baggage Files&quot;, which are additional files associated with your project. </text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="T_Menu" translate="true">Topic Files</text><text styleclass="Body Text" translate="true"> subsection lists all your topic files, including those that do not have entries in the TOC. For example, these include popup topics and topics that are only displayed when the user clicks on a hyperlink.</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text HowTo" translate="true">The </text><text styleclass="T_Menu" translate="true">Baggage Files</text><text styleclass="Body Text" translate="true"> subsection is the place where you store files that you want to export together with your project when you publish it. These can include graphics you want to use in your own HTML templates, JavaScript files containing functions you want to use in your HTML-based publishing formats and so on. If you are just getting started with Help+Manual you don&apos;t need to worry about the Baggage Files section at the moment.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[The Configuration section]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text HowTo"><table rowcount="1" colcount="2" style="width:auto; cell-padding:4px; cell-spacing:0px; page-break-inside:avoid; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td style="width:231px;">
+          <para styleclass="Normal" style="text-align:center;"><image src="exp_config.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+        <td style="vertical-align:middle;">
+          <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Project configuration settings</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">This section contains all your project&apos;s configuration settings. This includes your project title, copyright notice, your language settings for help in international languages, special settings and editable layout templates for your output formats, &quot;skins&quot; for changing the appearance and formatting of your entire project, user-defined variables and so on.</text></para>
+          <para styleclass="Heading3_atocs_"><text styleclass="Heading3_atocs_" translate="true">Program configuration settings are in the File Menu!</text></para>
+          <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Note that the Configuration section in the Project Explorer only contains settings for your individual projects (each project has its own configuration settings). The general configuration settings for Help+Manual are accessed in the </text><text styleclass="T_Menu" translate="true">File Menu</text><text styleclass="Body Text" translate="true">!</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

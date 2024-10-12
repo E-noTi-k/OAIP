@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns:xsi="http://www.w3.org/2001/XInclude">
+  <topicref type="topic" id="383437750974525" build="ALL" modified="2020-02-10T14:24:58.811Z" icon="0" href="HM_QuickStart">
+    <caption translate="true">Welcome to Help+Manual!</caption>
+    <topicref type="topic" id="385462877987024" build="ALL" modified="2008-01-28T14:41:14.675Z" icon="0" href="HM_QuickStart_NewProject">
+      <caption translate="true">Creating projects</caption>
+    </topicref>
+    <topicref type="topic" id="396701506797" build="ALL" modified="2008-01-28T14:38:56.759Z" icon="0" href="HM5_QuickStart_Importing">
+      <caption translate="true">Importing data</caption>
+    </topicref>
+    <topicref type="topic" id="385464385224483" build="ALL" modified="2008-01-28T14:44:06.914Z" icon="0" href="HM_QuickStart_OrgTOC">
+      <caption translate="true">Organizing the TOC</caption>
+    </topicref>
+    <topicref type="topic" id="385463187547006" build="ALL" modified="2008-01-28T14:41:56.659Z" icon="0" href="HM_QuickStart_AddTopics">
+      <caption translate="true">Adding topics</caption>
+    </topicref>
+    <topicref type="topic" id="385464040899234" build="ALL" modified="2022-09-30T09:57:05.008Z" icon="0" href="HM_QuickStart_EditTopics">
+      <caption translate="true">Editing topics</caption>
+    </topicref>
+    <topicref type="topic" id="385466673695874" build="ALL" modified="2008-01-28T14:41:43.300Z" icon="0" href="HM_QuickStart_Styles">
+      <caption translate="true">Using styles</caption>
+    </topicref>
+    <topicref type="topic" id="385464752871733" build="ALL" modified="2008-01-28T14:42:20.383Z" icon="0" href="HM_QuickStart_Graphics">
+      <caption translate="true">Inserting graphics</caption>
+    </topicref>
+    <topicref type="topic" id="421385025056265" build="ALL" modified="2015-05-14T16:03:28.982Z" icon="0" href="HM_QuickStart_Tables">
+      <caption translate="true">Inserting Tables</caption>
+    </topicref>
+    <topicref type="topic" id="385464827938526" build="ALL" modified="2008-03-13T18:41:27.117Z" icon="0" href="HM_QuickStart_Links">
+      <caption translate="true">Creating hyperlinks</caption>
+    </topicref>
+    <topicref type="topic" id="385466699960124" build="ALL" modified="2008-01-28T14:42:44.942Z" icon="0" href="HM_QuickStart_Compile">
+      <caption translate="true">Publishing your project</caption>
+    </topicref>
+    <topicref type="topic" id="391088438859138" build="ALL" modified="2008-02-05T11:03:31.917Z" icon="0" href="HM_Tutorials_Other">
+      <caption translate="true">Template files</caption>
+    </topicref>
+  </topicref>
+  <topicref type="topic" id="395078194576448" build="ALL" modified="2008-03-02T14:32:20.216Z" icon="0" href="HM_QuickStart_Explorer">
+    <caption translate="true">Using the Project Explorer</caption>
+    <topicref type="topic" id="395243930349324" build="ALL" modified="2008-03-17T09:12:58.764Z" icon="0" href="HM_QuickStart_Explorer_Sections">
+      <caption translate="true">Project Explorer Sections</caption>
+    </topicref>
+    <topicref type="topic" id="395078262828850" build="ALL" modified="2008-02-29T18:40:03.330Z" icon="0" href="HM_QuickStart_Explorer_Navigate">
+      <caption translate="true">Navigating in the Project Explorer</caption>
+    </topicref>
+  </topicref>
+</map>

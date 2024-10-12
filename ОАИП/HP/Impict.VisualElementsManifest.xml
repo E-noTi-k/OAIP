@@ -1,0 +1,9 @@
+<Application xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>  <VisualElements
+      ShowNameOnSquare150x150Logo='on'
+      Square150x150Logo='Impict_Startmenu_Icon.png'
+      Square70x70Logo='Impict_Startmenu_Icon.png'
+	  DisplayName='Impict'
+	  Description='Impict Image Editor'
+      ForegroundText='light'
+      BackgroundColor='#343434'/>
+</Application>

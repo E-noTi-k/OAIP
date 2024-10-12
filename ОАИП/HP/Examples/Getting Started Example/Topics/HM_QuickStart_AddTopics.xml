@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2022-09-30T09:57:04.878Z" lasteditedby="Tim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Adding topics</title>
+  <keywords>
+    <keyword translate="true">creating new topics</keyword>
+    <keyword translate="true">topics<keyword translate="true">creating new</keyword></keyword>
+    <keyword translate="true">tutorials<keyword translate="true">adding topics</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Adding topics</text></para>
+    </header>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The New Project option creates some topics for you automatically but normally you will create topics yourself. Creating a topic in Help+Manual is very much like creating a new document in a word processor. Each topic in a project is actually an independent document, but you can manage all these topics as though they were a single document. this is  </text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">You will normally create new topics in the Table of Contents (TOC), which automatically creates both the topic file and an entry for the topic in the TOC, where you can </text><link displaytype="text" defaultstyle="true" type="topiclink" href="HM_QuickStart_OrgTOC" styleclass="Body Text" translate="true">move it around</link><text styleclass="Body Text" translate="true"> as you like. And you can also </text><link displaytype="text" defaultstyle="true" type="topiclink" href="HM_QuickStart_EditTopics" styleclass="Body Text" translate="true">add text</link><text styleclass="Body Text" translate="true"> and </text><link displaytype="text" defaultstyle="true" type="topiclink" href="HM_QuickStart_Graphics" styleclass="Body Text" translate="true">other content</link><text styleclass="Body Text" translate="true"> to it, of course.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">You can also create new topics in the Project Files/Topic Files section of the Project Explorer, but when you do this the topics will not have TOC entries </text><text styleclass="Body Text" style="font-family:Arial;" translate="true">–</text><text styleclass="Body Text" translate="true"> they will be &quot;invisible&quot;. Topics created in Topic Files can only be displayed with hyperlinks, they are used for popup topics and for information you don&apos;t want to include in the TOC directly.</text></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[How to create a new topic]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You can create topics in the project&apos;s Table of Contents (TOC) and the Topic Files sections in the Project Explorer. You will normally create topics in the TOC so that they are included in the table of contents of your published project.</text></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">In the Project Explorer click in the position in the TOC where you want to insert a new topic.</text><text styleclass="HowTo Numbered" style="font-weight:bold;" translate="true"> </text></li>
+          </list>
+          <para styleclass="Body Text HowTo" style="margin-left:48px;"><image src="exp_newtopic.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Select </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">Add Topic</text><text styleclass="HowTo Numbered" translate="true"> in the </text><text styleclass="T_Menu" translate="true">Project</text><text styleclass="HowTo Numbered" translate="true"> tab of the Ribbon. </text></li>
+          </list>
+          <para styleclass="Body Text" style="margin-left:72px;"><image src="mn_addtopic.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Choose where you want to insert your topic relative to the selected topic:</text></li>
+          </list>
+          <para styleclass="Body Text" style="margin-left:72px;"><image src="mn_addtopic_menu.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <para styleclass="Body Text HowTo" style="margin-left:48px;"><text styleclass="T_Menu" translate="true">Insert Child</text><text styleclass="Body Text HowTo" translate="true"> inserts the new topic as a sub-topic of the selected topic, turning the parent topic into a chapter (if it is not already a chapter).</text></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted" translate="true">This displays the </text><text styleclass="HowTo Bulleted" style="font-style:italic;" translate="true">Insert New Topic or Chapter</text><text styleclass="HowTo Bulleted" translate="true"> dialog:</text></li>
+          </list>
+          <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:10px; margin-left:60px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><image src="dlg_newtopic.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <para styleclass="Body Text HowTo" style="margin-left:48px;"><text styleclass="Body Text HowTo" translate="true">Select the </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">New Topic/Chapter</text><text styleclass="Body Text HowTo" translate="true"> option. Enter a heading (title) for the new topic. The Topic ID is created automatically from the heading. You can edit this if you like. Leave the </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">HTML Template</text><text styleclass="Body Text HowTo" translate="true">, </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Topic Class</text><text styleclass="Body Text HowTo" translate="true">, </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Create in:</text><text styleclass="Body Text HowTo" translate="true"> and </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Topic Template:</text><text styleclass="Body Text HowTo" translate="true"> settings as they are.</text></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">After entering your settings click on OK to create the new topic and insert it in the TOC.</text></li>
+          </list>
+          <para styleclass="Body Text" style="margin-left:48px;"><image src="WIN_NewTopic2T.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Once you have created a topic you can </text><link displaytype="text" defaultstyle="true" type="topiclink" href="HM_QuickStart_EditTopics" styleclass="HowTo Numbered" translate="true">edit it</link><text styleclass="HowTo Numbered" translate="true"> and </text><link displaytype="text" defaultstyle="true" type="topiclink" href="HM_QuickStart_OrgTOC" styleclass="HowTo Numbered" translate="true">move it around</link><text styleclass="HowTo Numbered" translate="true"> in the TOC.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

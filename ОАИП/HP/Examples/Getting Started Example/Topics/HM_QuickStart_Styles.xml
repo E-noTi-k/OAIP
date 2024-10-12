@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="Tim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Using styles</title>
+  <keywords>
+    <keyword translate="true">Normal style</keyword>
+    <keyword translate="true">styles<keyword translate="true">defining new</keyword><keyword translate="true">using (tutorial)</keyword></keyword>
+    <keyword translate="true">table styles<keyword translate="true">applying</keyword><keyword translate="true">defining</keyword></keyword>
+    <keyword translate="true">tutorials<keyword translate="true">Using Styles</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Using styles</text></para>
+    </header>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">You can format all your text manually if you like but it&apos;s much more efficient to use styles. Styles are formatting definitions that you can apply to text and paragraphs with a single click. The style definition is then linked to the formatted text and if you change the definition everything formatted with the style is updated immediately.</text></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo_atoc_"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[How to apply a style]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">To apply a style to a paragraph just click anywhere in the paragraph and select the style in the Style Selector in the </text><text styleclass="T_Menu" translate="true">Write</text><text styleclass="Body Text HowTo" translate="true"> tab:</text></para>
+          <para styleclass="Body Text HowTo" style="margin-left:48px;"><image src="rb_styleselector.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">If you included a keyboard shortcut in the style definition you can use the keyboard shortcut instead of the Style Selector. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">If you select text before applying a style the style&apos;s font attributes will only be applied to the selected text. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" style="font-weight:bold;" translate="true">Note:</text><text styleclass="Body Text HowTo" translate="true"> If the paragraph consists of formatted imported text you must select the entire paragraph before applying a style. Formatted text has priority over styles and must be selected to be changed.</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo_atoc_"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[How to modify a style]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="2" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Click in a paragraph in your project formatted with a style you want to change, then select </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">Styles &gt; Edit Styles</text><text styleclass="HowTo Numbered" translate="true"> in the </text><text styleclass="T_Menu" translate="true">Write</text><text styleclass="HowTo Numbered" translate="true"> tab.</text><text styleclass="HowTo Numbered" style="font-weight:bold;" translate="true"> </text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">This displays the </text><text styleclass="T_Menu" translate="true">Edit Styles</text><text styleclass="HowTo Numbered" translate="true"> dialog. The style at the current cursor position is selected automatically. </text></li>
+          </list>
+          <para styleclass="Body Text HowTo" style="margin-left:48px;"><image src="DLG_StylesEdit.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Click on the </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">Font Settings</text><text styleclass="HowTo Numbered" translate="true"> and </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">Paragraph Settings</text><text styleclass="HowTo Numbered" translate="true"> buttons and adjust the font and paragraph settings. If you want you can also apply </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">Borders and Background</text><text styleclass="HowTo Numbered" translate="true"> settings.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true"> Click on OK to close the dialog. </text><text style="font-family:Arial; font-size:11pt; color:#000000;" translate="true">The results are immediately visible in the editor and will be applied to all the text in your entire project formatted with the edited style.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The same settings will also be applied to text formatted with styles based on the edited style, for all attributes that have not been explicitly changed in the other styles. </text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo_atoc_"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[How to change the font and paragraph settings for your entire project]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle><text styleclass="Heading HowTo Toggle_atoc_" translate="true"> </text></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">There are a number of predefined standard styles. The most important one is </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Normal</text><text styleclass="Body Text HowTo" translate="true">, which is the default style for all normal body text paragraphs in your project. Most other styles are based on Normal. This means that changing the settings of Normal will automatically change all text in your entire project formatted with Normal or with any style based on Normal. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Changing the definition of Normal changes the body text style for your entire project in a couple of seconds. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The same settings will also be applied to text formatted with styles based on Normal, for all attributes that have not been explicitly changed in the other styles. </text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo_atoc_"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[How to define a new style]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">In addition to changing the Normal style you will also want to define your own styles so that you can apply complex formatting quickly and change it whenever you want.</text></para>
+          <list id="3" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Select </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">Styles &gt; Edit Styles</text><text styleclass="HowTo Numbered" translate="true"> in the </text><text styleclass="T_Menu" translate="true">Write</text><text styleclass="HowTo Numbered" translate="true"> tab to display the Edit Styles dialog:</text><text styleclass="HowTo Numbered" style="font-weight:bold;" translate="true"> </text></li>
+          </list>
+          <para styleclass="Body Text HowTo" style="margin-left:48px;"><image src="DLG_StylesEdit.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <list id="3" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text style="font-family:Arial; font-size:11pt; color:#000000;" translate="true">Select </text><text style="font-family:Arial; font-size:11pt; font-style:italic; color:#000000;" translate="true">Add Style</text><text style="font-family:Arial; font-size:11pt; color:#000000;" translate="true"> to define a new style, then edit its default name in the </text><text style="font-family:Arial; font-size:11pt; font-style:italic; color:#000000;" translate="true">Style Name:</text><text style="font-family:Arial; font-size:11pt; color:#000000;" translate="true"> field. You can change style names whenever you like!</text></li>
+            <li styleclass="HowTo Numbered"><text style="font-family:Arial; font-size:11pt; color:#000000;" translate="true">Select </text><text style="font-family:Arial; font-size:11pt; font-style:italic; color:#000000;" translate="true">Font Settings</text><text style="font-family:Arial; font-size:11pt; color:#000000;" translate="true"> and </text><text style="font-family:Arial; font-size:11pt; font-style:italic; color:#000000;" translate="true">Paragraph Settings</text><text style="font-family:Arial; font-size:11pt; color:#000000;" translate="true"> to edit the settings for the style. You can also add a style for the next paragraph; then pressing ENTER in a paragraph with the current style will automatically format the new paragraph with the &quot;next&quot; style.</text></li>
+            <li styleclass="HowTo Numbered"><text style="font-family:Arial; font-size:11pt; color:#000000;" translate="true">If you want you can also assign a shortcut key so that you can apply the style quickly.</text></li>
+            <li styleclass="HowTo Numbered"><text style="font-family:Arial; font-size:11pt; color:#000000;" translate="true">Then click on </text><text styleclass="T_Menu" translate="true">OK</text><text style="font-family:Arial; font-size:11pt; color:#000000;" translate="true"> to close the dialog. </text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Using table styles]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You can define table styles in the </text><text styleclass="T_Menu" translate="true">Edit Styles</text><text styleclass="Body Text HowTo" translate="true"> dialog (see above) in the same way as you define styles for paragraphs and text. </text></para>
+          <para styleclass="Heading3_atocs_" style="margin-left:24px;"><text styleclass="Heading3_atocs_" translate="true">Applying a style to a table:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Click inside the table, select </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Properties</text><text styleclass="Body Text HowTo" translate="true"> in the </text><text styleclass="T_Menu" translate="true">Table</text><text styleclass="Body Text HowTo" translate="true"> tab and then select the style in the </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Table Style:</text><text styleclass="Body Text HowTo" translate="true"> field.</text></para>
+          <para styleclass="Heading3_atocs_" style="margin-left:24px;"><text styleclass="Heading3_atocs_" translate="true">Creating a table with a style:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Create a table with </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Table &gt; Insert Table</text><text styleclass="Body Text HowTo" translate="true"> in the </text><text styleclass="T_Menu" translate="true">Write</text><text styleclass="Body Text HowTo" translate="true"> or </text><text styleclass="T_Menu" translate="true">Table</text><text styleclass="Body Text HowTo" translate="true"> tab and select the style in the Table Style: field when entering the table configuration settings. Any additional settings you enter in the Insert Table dialog will override the style settings for that table. </text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xplainskin name="Blank Skin" description="Skin without any player controls, ideal for endless loops in autoplay mode">
+	<variables>
+		<var type="cdata"   name="DOCTYPE" />
+		<var type="data"    name="TITLE" />
+		<var type="data"    name="DESCRIPTION" />
+		<var type="cdata"   name="OPENGRAPH" />
+		<var type="data"    name="FAVICON" />
+		<var type="data"    name="PREVIEWIMAGE" />
+		<var type="cdata"   name="BODYCSS" />
+		<var type="data"    name="BODYSTYLE" />
+		<var type="cdata"   name="XPLAIN" />
+		<var type="cdata"   name="XPLAINSCRIPTS" />
+		<var type="cdata"   name="XPLAININIT" />
+		<var type="bool"    name="AUDIOCONTROLS" />
+
+		<var type="color"   name="BUTTON_AUDIO_MUTE_BACKGROUND" default="#FF555555" />
+		<var type="color"   name="BUTTON_AUDIO_MUTE_FOREGROUND" default="#FFFFFFFF" />
+		<var type="text"    name="BUTTON_AUDIO_MUTE_TEXT" default="Mute" />
+		<var type="text"    name="BUTTON_AUDIO_UNMUTE_TEXT" default="Unmute" />
+		<var type="text"    name="BUTTON_AUDIO_UNMUTE_INFO" default="Tap or click to unmute audio." />
+		<var type="text"    name="BUTTON_AUDIO_VOLUME_TEXT" default="Volume" />
+		
+		<var type="color"   name="PLAYER_PROGRESSBAR_COLOR" default="#FF1072C5" />
+		<var type="html"    name="FALLBACK_MESSAGE" default="We are sorry, but your browser does not support HelpXplain. Please use a decent browser and turn Javascript on." />
+	</variables>
+	
+<htmlcode><![CDATA[<%DOCTYPE%>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title><%TITLE%></title>
+<meta name="description" content="<%DESCRIPTION%>" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<%OPENGRAPH%>
+<link rel="icon" href="<%FAVICON%>" type="image/png" />
+<style type="text/css" media="screen">
+<%BODYCSS%>
+
+<%IF:AUDIOCONTROLS%>
+div#xplplayercontrols {
+	width:100%;
+	position:absolute;
+	bottom:5vH;
+	text-align:center;
+	opacity: 0;
+    transition: opacity 0.3s;
+}
+body:hover > div#xplplayercontrols {
+	opacity: 1;
+}
+div#xplplayeraudiocontrols {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 32pt;
+	width: 90pt;
+	background: transparent;
+	overflow: visible;
+	z-index: 99;
+}
+div#xplplayeraudiocontrols svg {
+	height:95%;
+	width: auto;
+	vertical-align: top;
+}
+div#xplplayeraudiocontrols path {
+  fill: <%BUTTON_AUDIO_MUTE_FOREGROUND%>;
+}
+div#xplplayeraudiocontrols .audiobutton {
+	position: absolute;
+	display: block;
+	left: 6pt;
+	top: 0;
+	height: 16pt;
+	width: 16pt;
+	background: <%BUTTON_AUDIO_MUTE_BACKGROUND%>;
+	border: none;
+	border-radius: 16pt;
+	padding: 4pt;
+}
+div#xplplayeraudiocontrols path {
+  fill: <%BUTTON_AUDIO_MUTE_FOREGROUND%>;
+}
+#xplplayeraudiocontrols div.audiobutton:hover {
+	background: <%THUMBS_ACTIVE_BORDERCOLOR%>;
+}
+div#xplplayeraudiocontrols .disabled {
+	display: none;
+}
+div#xplplayeraudioinfo {
+	position: absolute;
+	display: none;
+	opacity: 0;
+	left: 2pt;
+	bottom: 42pt;
+	width: 20vW;
+	padding: 8pt;
+	font-size: 14pt;
+	line-height: 1.2em;
+	text-align: center;
+	background: <%BUTTON_AUDIO_MUTE_BACKGROUND%>;
+	color: <%BUTTON_AUDIO_MUTE_FOREGROUND%>;
+	border-radius: 5pt;
+	box-shadow: 0 0 15px #c1c1c1;
+	cursor: pointer;
+}
+div#xplplayeraudioinfo:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 5pt;
+	bottom: -25pt;
+	border: 20px solid transparent;
+	border-top: 22px solid <%BUTTON_AUDIO_MUTE_BACKGROUND%>;
+}
+#xplplayervolume {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	top: 2pt;
+	left: 38pt;
+	height: 20pt;
+	width: 50pt;
+	padding: 0;
+	vertical-align: middle;
+	transition: opacity 0.3s, visibility 0.3s;
+}
+#xplplayervolume div.range {
+	position: relative;
+	left: 0;
+	top: 40%;
+	width: 100%;
+	height: 20%; 
+	background: #555555;
+	overflow: visible;
+}
+#xplplayervolume div.bar {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #A0A0A0;
+}
+#xplplayervolume div.slider {
+	position:absolute;
+	left: 50px;
+	top: 3.5pt;
+	width: 10pt;
+	height: 10pt;
+	background: <%BUTTON_AUDIO_MUTE_FOREGROUND%>;
+	border-radius: 6pt;
+	border: 1pt solid #888888;
+}
+#xplplayervolume div.slider:hover {
+	background: <%BUTTON_AUDIO_MUTE_FOREGROUND%>;
+	border-color: #888888;
+}
+div#xplplayeraudiocontrols:hover > #xplplayervolume {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.3s, visibility 0.3s;
+}
+<%/IF:AUDIOCONTROLS%>
+div.fallback {
+  position: absolute;
+  top: 20%;
+  background: #FFF;
+  opacity: 0.9;
+  font-size: 2em;
+  padding: 1em;
+  line-height: 1em
+}
+div#xplplayerloading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20vH;
+  height: 20vH;
+  margin: -10vH 0 0 -10vH;
+}
+div#xplplayerloading.disabled {
+  display: none;	
+}
+svg.xplspinner {
+  animation: rotate 2s linear infinite;
+  width: 100%;
+  height: 100%;
+}
+svg.xplspinner > circle {
+    stroke: <%PLAYER_PROGRESSBAR_COLOR%>;
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+</style>
+</head>
+<body style="<%BODYSTYLE%>">
+<%XPLAIN%>
+<div id="xplplayerloading"><svg class="xplspinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg></div>
+<%IF:AUDIOCONTROLS%><div id="xplplayercontrols" data-overlay="1"><div id="xplplayeraudiocontrols">
+<div id="xplplayermute" class="audiobutton" title="<%BUTTON_AUDIO_MUTE_TEXT%>" onclick="xplain.enableaudio(false)">
+<svg viewBox="0 0 36 36"><path d="M9,9 L20.9999980926514,0 L20.9999980926514,36 L9,27.0000019073486 L9,9 Z M0,27.0000019073486 L5.99999904632568,27.0000019073486 L5.99999904632568,9 L0,9 L0,27.0000019073486 Z M30.3959980010986,3.12479996681213 L28.1504955291748,5.8193998336792 C30.9209976196289,9.02880001068115 32.6249961853027,13.3019981384277 32.6249961853027,18 C32.6249961853027,22.6979999542236 30.9224948883057,26.9712028503418 28.1504955291748,30.1788005828857 L30.397497177124,32.8751983642578 C33.8549995422363,28.9997997283936 36,23.7761974334717 36,17.9999980926514 C36,12.2237968444824 33.8549995422363,7.0019965171814 30.3959980010986,3.12479662895203 Z M29.6624946594238,18 C29.6624946594238,14.2488012313843 28.2899951934814,10.8594007492065 26.0864963531494,8.2962007522583 L23.831995010376,11.0016002655029 C25.3484954833984,12.8898000717163 26.2874927520752,15.3234014511108 26.2874927520752,18 C26.2874927520752,20.6784019470215 25.3529949188232,23.1138000488281 23.8364963531494,25.0037994384766 L26.090991973877,27.7091979980469 C28.2929916381836,25.1460018157959 29.6624927520752,21.7529983520508 29.6624927520752,18 Z"></path></svg>
+</div>
+<div id="xplplayerunmute" class="audiobutton disabled" title="<%BUTTON_AUDIO_UNMUTE_TEXT%>" onclick="xplain.enableaudio(true)">
+<svg viewBox="0 0 36 36"><path d="M36,1.90350139141083 L2.78100085258484,36 L0,34.0965003967285 L6.91379880905151,26.9999980926514 L3.62520051002502,26.9999980926514 L3.62520051002502,12.0000019073486 L12.5999975204468,12.0000019073486 L12.5999975204468,21.1364994049072 L16.2252025604248,17.4419994354248 L16.2252025604248,11.9999980926514 L25.8821964263916,7.52849960327148 L33.2190017700195,0 L36,1.90349996089935 Z M16.2252025604248,25.7924957275391 L16.2252025604248,26.9999980926514 L32.4000053405762,34.4999961853027 L32.4000053405762,9.19050121307373 L16.2252025604248,25.7924957275391 Z"></path></svg>
+</div>
+<div id="xplplayeraudioinfo" onclick="xplain.enableaudio(true);this.style.display='none'"><%BUTTON_AUDIO_UNMUTE_INFO%></div>
+<div id="xplplayervolume" title="<%BUTTON_AUDIO_VOLUME_TEXT%>"><div class="range"><div class="bar"></div></div><div class="slider"></div></div>
+</div></div><%/IF:AUDIOCONTROLS%>
+<div id="fallbackmessage" style="display:none;margin:0 auto">
+<img src="<%PREVIEWIMAGE%>" style="width:100%" />
+<div class="fallback"><%FALLBACK_MESSAGE%></div>
+</div>
+<%XPLAINSCRIPTS%>
+<script>
+<%XPLAININIT%>
+</script>
+<noscript><div style="margin: 0 auto; text-align:center">
+<img src="<%PREVIEWIMAGE%>" style="width:100%" />
+<div class="fallback"><%FALLBACK_MESSAGE%></div>
+</div></noscript>
+</body>
+</html>
+]]></htmlcode>
+</xplainskin>

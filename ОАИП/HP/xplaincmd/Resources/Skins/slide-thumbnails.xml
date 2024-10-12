@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xplainskin name="Slide Thumbnails" description="Skin with slide thumbnails for navigation. Works best for Xplains with up to 10 slides.">
+	<variables>
+		<var type="cdata"   name="DOCTYPE" />
+		<var type="data"    name="TITLE" />
+		<var type="data"    name="DESCRIPTION" />
+		<var type="cdata"   name="OPENGRAPH" />
+		<var type="data"    name="FAVICON" />
+		<var type="data"    name="PREVIEWIMAGE" />
+		<var type="data"    name="THUMBSIMAGE" />
+		<var type="cdata"   name="XPLTHUMBS" />
+		<var type="cdata"   name="BODYCSS" />
+		<var type="data"    name="BODYSTYLE" />
+		<var type="cdata"   name="XPLAIN" />
+		<var type="cdata"   name="XPLAINSCRIPTS" />
+		<var type="cdata"   name="XPLAININIT" />
+		<var type="int"     name="CANVASWIDTH" />
+		<var type="int"     name="CANVASHEIGHT" />
+		<var type="int"     name="SLIDECOUNT" />
+		<var type="bool"    name="AUDIOCONTROLS" />
+
+		<var type="bool"    name="PLAYER_CONTROLS_ALWAYSVISIBLE" default="1" />
+		<var type="opacity" name="PLAYER_CONTROLS_OPACITY" default="0.3" />
+
+		<var type="int"     name="THUMBS_BORDERWIDTH" default="2" />
+		<var type="color"   name="THUMBS_BORDERCOLOR" default="#FFFFFFFF" />
+		<var type="int"     name="THUMBS_ACTIVE_BORDERWIDTH" default="2" />
+		<var type="color"   name="THUMBS_ACTIVE_BORDERCOLOR" default="#FFFF0000" />
+		
+		<var type="calc" 	name="THUMBSWIDTH" default="70/<%SLIDECOUNT%>" />
+		<var type="calc"    name="THUMBSHEIGHT" default="<%THUMBSWIDTH%>*<%CANVASHEIGHT%>/<%CANVASWIDTH%>" />
+		<var type="calc"    name="THUMBSMAXHEIGHT" default="10*<%CANVASHEIGHT%>/<%CANVASWIDTH%>" />
+
+		<var type="color"   name="BUTTON_AUDIO_MUTE_BACKGROUND" default="#FF555555" />
+		<var type="color"   name="BUTTON_AUDIO_MUTE_FOREGROUND" default="#FFFFFFFF" />
+		<var type="text"    name="BUTTON_AUDIO_MUTE_TEXT" default="Mute" />
+		<var type="text"    name="BUTTON_AUDIO_UNMUTE_TEXT" default="Unmute" />
+		<var type="text"    name="BUTTON_AUDIO_UNMUTE_INFO" default="Tap or click to unmute audio." />
+		<var type="text"    name="BUTTON_AUDIO_VOLUME_TEXT" default="Volume" />
+		
+		<var type="display" name="BUTTON_SHARE_DISPLAY" default="block" />
+		<var type="text"    name="BUTTON_SHARE_TEXT" default="Share" />
+		<var type="percent" name="BUTTON_SHARE_SIZE" default="10" />
+		<var type="color"   name="BUTTON_SHARE_COLOR" default="#FFFFFFFF" />
+		<var type="display" name="BUTTON_SHARE_FACEBOOK" default="block" />
+		<var type="text"    name="BUTTON_SHARE_FACEBOOK_TEXT" default="Share on Facebook" />
+		<var type="display" name="BUTTON_SHARE_TWITTER" default="block" />
+		<var type="text"    name="BUTTON_SHARE_TWITTER_TEXT" default="Share on Twitter" />
+		<var type="display" name="BUTTON_SHARE_LINKEDIN" default="block" />
+		<var type="text"    name="BUTTON_SHARE_LINKEDIN_TEXT" default="Share on LinkedIn" />
+		<var type="display" name="BUTTON_SHARE_XING" default="none" />
+		<var type="text"    name="BUTTON_SHARE_XING_TEXT" default="Share on Xing" />
+		<var type="display" name="BUTTON_SHARE_EMAIL" default="block" />
+		<var type="text"    name="BUTTON_SHARE_EMAIL_TEXT" default="Share by Email" />
+		<var type="text"    name="BUTTON_ABOUTHELPXPLAIN_TEXT" default="Made with HelpXplain" />
+		
+		<var type="html"    name="FALLBACK_MESSAGE" default="We are sorry, but your browser does not support HelpXplain. Please use a decent browser and turn Javascript on." />
+	</variables>
+	
+<htmlcode><![CDATA[<%DOCTYPE%>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title><%TITLE%></title>
+<meta name="description" content="<%DESCRIPTION%>" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<%OPENGRAPH%>
+<link rel="icon" href="<%FAVICON%>" type="image/png" />
+<style type="text/css" media="screen">
+<%BODYCSS%>
+
+div#xplplayercontrols {
+	width:100%;
+	position:absolute;
+	bottom:5vH;
+	text-align:center;
+	opacity: <%IF:PLAYER_CONTROLS_ALWAYSVISIBLE%><%PLAYER_CONTROLS_OPACITY%>;<%/IF:PLAYER_CONTROLS_ALWAYSVISIBLE%><%IFNOT:PLAYER_CONTROLS_ALWAYSVISIBLE%>0;<%/IFNOT:PLAYER_CONTROLS_ALWAYSVISIBLE%>
+    transition: opacity 0.3s;
+}
+body:hover > div#xplplayercontrols {
+	opacity: 1;
+}
+div#xplplayershare {
+	position:fixed;
+	right: 0;
+	top: 0;
+	width: <%BUTTON_SHARE_SIZE%>vH;
+	height: <%BUTTON_SHARE_SIZE%>vH;
+}
+div#xplplayersharepopup {
+	position:fixed;
+	right: 0;
+	top: <%BUTTON_SHARE_SIZE%>vH;
+	width: auto;
+	background: rgba(0,0,0,0.7);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s, visibility 0.3s;
+}
+
+div#xplplayershare:hover  {
+	background: rgba(0,0,0,0.7);
+}
+
+div#xplplayershare:hover > div#xplplayersharepopup {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+div#xplplayersharepopup a {
+	width: <%BUTTON_SHARE_SIZE%>vH;
+	height: <%BUTTON_SHARE_SIZE%>vH;
+	cursor: pointer;
+}
+
+div#xplplayercontrols svg {
+	height:95%;
+	width: auto;
+	vertical-align: top;
+}
+
+div#xplplayercontrols path {
+  fill: <%BUTTON_SHARE_COLOR%>;
+  stroke: none;
+}
+
+div#xplthumbs div {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: <%THUMBSWIDTH%>vW;
+	height: <%THUMBSHEIGHT%>vW;
+	max-width: 10vW;
+	max-height: <%THUMBSMAXHEIGHT%>vW;
+	background:url(<%THUMBSIMAGE%>);
+	background-size: auto 100%;
+	border: <%THUMBS_BORDERWIDTH%>px solid <%THUMBS_BORDERCOLOR%>;
+	cursor:pointer;
+}
+div#xplthumbs div.active {
+	border: <%THUMBS_ACTIVE_BORDERWIDTH%>px solid <%THUMBS_ACTIVE_BORDERCOLOR%>;
+}
+div#xplthumbs div:hover {
+	border: <%THUMBS_ACTIVE_BORDERWIDTH%>px solid <%THUMBS_ACTIVE_BORDERCOLOR%>;
+}
+<%IF:AUDIOCONTROLS%>
+div#xplplayeraudiocontrols {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 32pt;
+	width: 90pt;
+	background: transparent;
+	overflow: visible;
+	z-index: 99;
+}
+div#xplplayeraudiocontrols path {
+  fill: <%BUTTON_AUDIO_MUTE_FOREGROUND%>;
+}
+div#xplplayeraudiocontrols .audiobutton {
+	position: absolute;
+	display: block;
+	left: 6pt;
+	top: 0;
+	height: 16pt;
+	width: 16pt;
+	background: <%BUTTON_AUDIO_MUTE_BACKGROUND%>;
+	border: none;
+	border-radius: 16pt;
+	padding: 4pt;
+}
+div#xplplayeraudiocontrols path {
+  fill: <%BUTTON_AUDIO_MUTE_FOREGROUND%>;
+}
+#xplplayeraudiocontrols div.audiobutton:hover {
+	background: <%THUMBS_ACTIVE_BORDERCOLOR%>;
+}
+div#xplplayeraudiocontrols .disabled {
+	display: none;
+}
+div#xplplayeraudioinfo {
+	position: absolute;
+	display: none;
+	opacity: 0;
+	left: 2pt;
+	bottom: 42pt;
+	width: 20vW;
+	padding: 8pt;
+	font-size: 14pt;
+	line-height: 1.2em;
+	text-align: center;
+	background: <%BUTTON_AUDIO_MUTE_BACKGROUND%>;
+	color: <%BUTTON_AUDIO_MUTE_FOREGROUND%>;
+	border-radius: 5pt;
+	box-shadow: 0 0 15px #c1c1c1;
+	cursor: pointer;
+}
+div#xplplayeraudioinfo:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 5pt;
+	bottom: -25pt;
+	border: 20px solid transparent;
+	border-top: 22px solid <%BUTTON_AUDIO_MUTE_BACKGROUND%>;
+}
+#xplplayervolume {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	top: 2pt;
+	left: 38pt;
+	height: 20pt;
+	width: 50pt;
+	padding: 0;
+	vertical-align: middle;
+	transition: opacity 0.3s, visibility 0.3s;
+}
+#xplplayervolume div.range {
+	position: relative;
+	left: 0;
+	top: 40%;
+	width: 100%;
+	height: 20%; 
+	background: #555555;
+	overflow: visible;
+}
+#xplplayervolume div.bar {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #A0A0A0;
+}
+#xplplayervolume div.slider {
+	position:absolute;
+	left: 50px;
+	top: 3.5pt;
+	width: 10pt;
+	height: 10pt;
+	background: <%BUTTON_AUDIO_MUTE_FOREGROUND%>;
+	border-radius: 6pt;
+	border: 1pt solid #888888;
+}
+#xplplayervolume div.slider:hover {
+	background: <%THUMBS_ACTIVE_BORDERCOLOR%>;
+	border-color: #888888;
+}
+div#xplplayeraudiocontrols:hover > #xplplayervolume {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.3s, visibility 0.3s;
+}
+<%/IF:AUDIOCONTROLS%>
+div#xplplayerloading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20vH;
+  height: 20vH;
+  margin: -10vH 0 0 -10vH;
+}
+div#xplplayerloading.disabled {
+  display: none;	
+}
+svg.xplspinner {
+  animation: rotate 2s linear infinite;
+  width: 100%;
+  height: 100%;
+}
+svg.xplspinner > circle {
+    stroke: <%THUMBS_ACTIVE_BORDERCOLOR%>;
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+div.fallback {
+  position: absolute;
+  top: 20%;
+  background: #FFF;
+  opacity: 0.9;
+  font-size: 2em;
+  padding: 1em;
+  line-height: 1em
+}
+</style>
+</head>
+<body style="<%BODYSTYLE%>">
+<%XPLAIN%>
+<div id="xplplayerloading"><svg class="xplspinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg></div>
+<div id="xplplayercontrols" data-overlay="1">
+<%XPLTHUMBS%>
+<%IF:AUDIOCONTROLS%><div id="xplplayeraudiocontrols">
+<div id="xplplayermute" class="audiobutton" title="<%BUTTON_AUDIO_MUTE_TEXT%>" onclick="xplain.enableaudio(false)">
+<svg viewBox="0 0 36 36"><path d="M9,9 L20.9999980926514,0 L20.9999980926514,36 L9,27.0000019073486 L9,9 Z M0,27.0000019073486 L5.99999904632568,27.0000019073486 L5.99999904632568,9 L0,9 L0,27.0000019073486 Z M30.3959980010986,3.12479996681213 L28.1504955291748,5.8193998336792 C30.9209976196289,9.02880001068115 32.6249961853027,13.3019981384277 32.6249961853027,18 C32.6249961853027,22.6979999542236 30.9224948883057,26.9712028503418 28.1504955291748,30.1788005828857 L30.397497177124,32.8751983642578 C33.8549995422363,28.9997997283936 36,23.7761974334717 36,17.9999980926514 C36,12.2237968444824 33.8549995422363,7.0019965171814 30.3959980010986,3.12479662895203 Z M29.6624946594238,18 C29.6624946594238,14.2488012313843 28.2899951934814,10.8594007492065 26.0864963531494,8.2962007522583 L23.831995010376,11.0016002655029 C25.3484954833984,12.8898000717163 26.2874927520752,15.3234014511108 26.2874927520752,18 C26.2874927520752,20.6784019470215 25.3529949188232,23.1138000488281 23.8364963531494,25.0037994384766 L26.090991973877,27.7091979980469 C28.2929916381836,25.1460018157959 29.6624927520752,21.7529983520508 29.6624927520752,18 Z"></path></svg>
+</div>
+<div id="xplplayerunmute" class="audiobutton disabled" title="<%BUTTON_AUDIO_UNMUTE_TEXT%>" onclick="xplain.enableaudio(true)">
+<svg viewBox="0 0 36 36"><path d="M36,1.90350139141083 L2.78100085258484,36 L0,34.0965003967285 L6.91379880905151,26.9999980926514 L3.62520051002502,26.9999980926514 L3.62520051002502,12.0000019073486 L12.5999975204468,12.0000019073486 L12.5999975204468,21.1364994049072 L16.2252025604248,17.4419994354248 L16.2252025604248,11.9999980926514 L25.8821964263916,7.52849960327148 L33.2190017700195,0 L36,1.90349996089935 Z M16.2252025604248,25.7924957275391 L16.2252025604248,26.9999980926514 L32.4000053405762,34.4999961853027 L32.4000053405762,9.19050121307373 L16.2252025604248,25.7924957275391 Z"></path></svg>
+</div>
+<div id="xplplayeraudioinfo" onclick="xplain.enableaudio(true);this.style.display='none'"><%BUTTON_AUDIO_UNMUTE_INFO%></div>
+<div id="xplplayervolume" title="<%BUTTON_AUDIO_VOLUME_TEXT%>"><div class="range"><div class="bar"></div></div><div class="slider"></div></div>
+</div><%/IF:AUDIOCONTROLS%>
+<div id="xplplayershare" class="button" style="display:<%BUTTON_SHARE_DISPLAY%>" title="<%BUTTON_SHARE_TEXT%>">
+<svg viewBox="0 0 36 36"><path class="xplsvgpath" fill="#FFFFFF" fill-rule="evenodd" stroke-width="1" stroke="#000000" d="M0,0 M32,32 M32,15.5 L18.5,3.5 L18.5,10 C6.5,11.8 2.2,20 0.5,28 C4.8,22.5 10,20 18.5,20 L18.5,27 L32,15.5Z "></path>
+</svg>
+
+<div id="xplplayersharepopup">
+<a id="xplShareFacebook" class="sharebutton" style="display:<%BUTTON_SHARE_FACEBOOK%>" title="<%BUTTON_SHARE_FACEBOOK_TEXT%>" onclick="xplain.share('facebook')">
+<svg viewBox="0 0 32 32">
+<rect width="32" height="32" style="fill:#3B5998;stroke:none"></rect>
+<path d="M22,32V20h4l1-5h-5v-2c0-2,1.002-3,3-3h2V5c-1,0-2.24,0-4,0c-3.675,0-6,2.881-6,7v3h-4v5h4v12H22z" style="fill:#FFFFFF;stroke:none"></path>
+</svg>
+</a>
+<a id="xplShareTwitter" class="sharebutton" style="display:<%BUTTON_SHARE_TWITTER%>" title="<%BUTTON_SHARE_TWITTER_TEXT%>" onclick="xplain.share('twitter')">
+<svg viewBox="0 0 32 32">
+<g>
+<rect width="32" height="32" style="fill:#00ACED;stroke:none"></rect>
+<path d="M25.987,9.894c-0.736,0.322-1.525,0.537-2.357,0.635c0.85-0.498,1.5-1.289,1.806-2.231   c-0.792,0.461-1.67,0.797-2.605,0.978C22.083,8.491,21.017,8,19.838,8c-2.266,0-4.1,1.807-4.1,4.038   c0,0.314,0.036,0.625,0.104,0.922c-3.407-0.172-6.429-1.779-8.452-4.221c-0.352,0.597-0.556,1.29-0.556,2.032   c0,1.399,0.726,2.635,1.824,3.36c-0.671-0.022-1.304-0.203-1.856-0.506c-0.001,0.017-0.001,0.034-0.001,0.052   c0,1.955,1.414,3.589,3.29,3.96c-0.343,0.09-0.705,0.142-1.081,0.142c-0.264,0-0.52-0.024-0.77-0.072   c0.52,1.604,2.034,2.771,3.828,2.805C10.67,21.594,8.9,22.24,6.979,22.24c-0.33,0-0.658-0.018-0.979-0.056   c1.814,1.145,3.971,1.813,6.287,1.813c7.541,0,11.666-6.154,11.666-11.491c0-0.173-0.005-0.35-0.012-0.521   C24.741,11.414,25.438,10.703,25.987,9.894z" style="fill:#FFFFFF;stroke:none"></path>
+</g>
+</svg>
+</a>
+<a id="xplShareLinkedin" class="sharebutton" style="display:<%BUTTON_SHARE_LINKEDIN%>" title="<%BUTTON_SHARE_LINKEDIN_TEXT%>" onclick="xplain.share('linkedin')">
+<svg viewBox="0 0 32 32">
+<g>
+<rect width="32" height="32" style="fill:#007BB6;stroke:none"></rect>
+<rect height="14" width="4" x="7" y="11" style="fill:#FFFFFF;stroke:none"></rect>
+<path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7 C25,14,24.479,11,20.499,11z" style="fill:#FFFFFF;stroke:none"></path>
+<circle cx="9" cy="8" r="2" style="fill:#FFFFFF;stroke:none"></circle>
+</g>
+</svg>
+</a>
+<a id="xplShareLinkedin" class="sharebutton" style="display:<%BUTTON_SHARE_XING%>" title="<%BUTTON_SHARE_XING_TEXT%>" onclick="xplain.share('xing')">
+<svg viewBox="0 0 32 32">
+<g>
+<rect width="32" height="32" style="fill:#174F50;stroke:none"></rect>
+<path d="M6.018,20.18l3.668-6.04L6.934,9.292h4.655l2.752,4.848l-3.667,6.04H6.018z M23.374,26.57h-4.938 l-4.729-8.288l7.338-12.854h4.938l-7.336,12.854L23.374,26.57z" style="fill:#FFFFFF;stroke:none"></path>
+</g>
+</svg>
+</a>
+<a id="xplShareEmail" class="sharebutton" style="display:<%BUTTON_SHARE_EMAIL%>" title="<%BUTTON_SHARE_EMAIL_TEXT%>" onclick="xplain.share('email')">
+<svg viewBox="0 0 32 32">
+<g>
+<rect width="32" height="32" style="fill:#DD4B39;stroke:none"></rect>
+<path d="M15.5,17 L26.5,6 L4.5,6 L15.5,17 Z M12.5,16 L15.5,19 L18.5,16 L26.5,25 L4.5,25 L12.5,16 Z M4.5,24 L4.5,7 L11.5,15 L4.5,24 Z M27.5,25 L27.5,6 L19.5,15 L27.5,25 Z" style="fill:#FFFFFF;stroke:none"></path>
+</g>
+</svg>
+</a>
+<a class="sharebutton" title="<%BUTTON_ABOUTHELPXPLAIN_TEXT%>" href="http://helpxplain.com" target="_blank">
+<img src="<%FAVICON%>" style="width:<%BUTTON_SHARE_SIZE%>vH;background:#404040"/>
+</a>
+</div>
+</div>
+</div>
+<div id="fallbackmessage" style="display:none;margin:0 auto">
+<img src="<%PREVIEWIMAGE%>" style="width:100%" />
+<div class="fallback"><%FALLBACK_MESSAGE%></div>
+</div>
+<%XPLAINSCRIPTS%>
+<script>
+<%XPLAININIT%>
+</script>
+<noscript><div style="margin: 0 auto; text-align:center">
+<img src="<%PREVIEWIMAGE%>" style="width:100%" />
+<div class="fallback"><%FALLBACK_MESSAGE%></div>
+</div></noscript>
+</body>
+</html>
+]]></htmlcode>
+</xplainskin>

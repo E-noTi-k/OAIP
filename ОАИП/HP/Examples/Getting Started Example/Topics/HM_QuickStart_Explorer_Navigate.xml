@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="alexander" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Navigating in the Project Explorer</title>
+  <keywords>
+    <keyword translate="true">copy and paste</keyword>
+    <keyword translate="true">loading multiple projects</keyword>
+    <keyword translate="true">loading projects</keyword>
+    <keyword translate="true">Project Explorer<keyword translate="true">navigating in</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Navigating in the Project Explorer</text></para>
+    </header>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">If you are familiar with Windows Explorer and a word processor like MS Word then you already have the basic skills you need to find your way around the Project Explorer. It functions like a combination of Windows Explorer and Word. </text></para>
+    <para styleclass="Body Text" style="text-align:center;"><toggle type="picture" print-expanded="true" help-expanded="false" src-collapsed="WIN_ProjExplorerFull.png" src-expanded="WIN_ProjExplorerFull.png" scale="60.00%" width="516" height="321" styleclass="Image Caption"></toggle></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The Project Explorer displays the contents of your projects in the same way as files in the Windows Explorer file manager. Selecting topic files in the Table of Contents (TOC) or Topic Files sections displays their contents in the Editor, which works like a word procesor. </text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The Project Explorer display is exactly the same for projects using both the compressed </text><text styleclass="T_Entry" translate="true">.hmxz</text><text styleclass="Body Text" translate="true"> format and the uncompressed </text><text styleclass="T_Entry" translate="true">.hmxp</text><text styleclass="Body Text" translate="true"> format. The only difference between the two formats is the way they are saved – both contain exactly the same files and folders. The compressed format just has its folders and files inside a single file, which works like a ZIP archive.</text></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Body Text"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Loading projects in the Project Explorer]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading3_atocs_" style="margin-left:24px;"><text styleclass="Heading3_atocs_" translate="true">Opening projects:</text></para>
+          <para styleclass="Body Text HowTo"><image src="app_open.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <list id="7" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass=" " style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:5px; margin-left:24px; line-height:1.0; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass=" " style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:5px; margin-left:24px; line-height:1.0; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><text styleclass="Body Text HowTo" translate="true">To load an existing project select the File menu, click on </text><text styleclass="Body Text HowTo" style="font-style:italic;" translate="true">Open</text><text styleclass="Body Text HowTo" translate="true">. and select a project to load (or create a </text><link displaytype="text" defaultstyle="true" type="topiclink" href="HM_QuickStart_NewProject" styleclass="Body Text HowTo" translate="true">new project</link><text styleclass="Body Text HowTo" translate="true">).</text></li>
+          </list>
+          <para styleclass="Heading3_atocs_" style="margin-left:24px;"><text styleclass="Heading3_atocs_" translate="true">Loading multiple projects:</text></para>
+          <para styleclass="Body Text HowTo"><image src="app_multiprojects.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <list id="8" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">You can load multiple projects in the Project Explorer.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">To load multiple projects at the same time, use </text><text styleclass="HowTo Bulleted" style="font-style:italic;" translate="true">Ctrl+Click</text><text styleclass="HowTo Bulleted" translate="true"> and </text><text styleclass="HowTo Bulleted" style="font-style:italic;" translate="true">Shift+Click</text><text styleclass="HowTo Bulleted" translate="true"> in the </text><text styleclass="T_Menu" translate="true">Open</text><text styleclass="HowTo Bulleted" translate="true"> dialog.</text></li>
+          </list>
+          <list id="9" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Select entries in the Table of Contents section to display and edit topics.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Body Text"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Expanding and collapsing projects and sections]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo"><image src="exp_expandcollapse.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <list id="10" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">The </text><image src="exp_expand.gif" scale="100.00%" styleclass="HowTo Bulleted"></image><text styleclass="HowTo Bulleted" translate="true"> and </text><image src="exp_collapse.gif" scale="100.00%" styleclass="Image Caption"></image><text styleclass="HowTo Bulleted" translate="true"> buttons expand and collapse projects and the main sections of each project.</text></li>
+          </list>
+          <list id="11" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Inside the main sections the </text><text styleclass="HowTo Bulleted" style="font-weight:bold;" translate="true">+/-</text><text styleclass="HowTo Bulleted" translate="true"> nodes expand and collapse the subsections, just as they do in the Windows Explorer.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Body Text"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Editing in the Project Explorer]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo"><image src="app_editing.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <list id="12" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">To edit a topic or topic file just click on an item in the Table of Contents or Project Files sections of the Explorer. Topic contents are displayed in the editor and can be edited directly. Work as you would in a word processor.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">To edit your project properties just select items in the Configuration section </text><text styleclass="HowTo Bulleted" style="font-family:Arial;" translate="true">–</text><text styleclass="HowTo Bulleted" translate="true"> the dialogs with the settings are displayed in the editor pane.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Body Text"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Dragging, copying and pasting in the Project Explorer]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo"><image src="exp_dragdrop.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You can move, copy and paste topics in the Explorer. Drag with the mouse, right-click to display editing options or use the Clipboard functions in the </text><text styleclass="T_Menu" translate="true">Project</text><text styleclass="Body Text HowTo" translate="true"> tab.</text></para>
+          <list id="13" type="ul" listtype="bullet" formatstring="·" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Drag a topic </text><text styleclass="HowTo Bulleted" style="text-decoration:underline;" translate="true">between</text><text styleclass="HowTo Bulleted" translate="true"> other topics to insert it before or after the other topics.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Drag a topic </text><text styleclass="HowTo Bulleted" style="text-decoration:underline;" translate="true">onto</text><text styleclass="HowTo Bulleted" translate="true"> another topic to make it a child (subtopic) of the other topic.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Use </text><text styleclass="HowTo Bulleted" style="font-style:italic;" translate="true">Ctrl+C</text><text styleclass="HowTo Bulleted" translate="true"> to copy, </text><text styleclass="HowTo Bulleted" style="font-style:italic;" translate="true">Ctrl+X</text><text styleclass="HowTo Bulleted" translate="true"> to cut and </text><text styleclass="HowTo Bulleted" style="font-style:italic;" translate="true">Ctrl+V</text><text styleclass="HowTo Bulleted" translate="true"> to paste topics in the Project Explorer.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

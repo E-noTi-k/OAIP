@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2020-02-10T14:27:10.392+01:00" lasteditedby="Alexander" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Organizing the TOC</title>
+  <keywords>
+    <keyword translate="true">cutting and pasting topics</keyword>
+    <keyword translate="true">moving topics</keyword>
+    <keyword translate="true">Table of Contents<keyword translate="true">organizing</keyword><keyword translate="true">overview</keyword></keyword>
+    <keyword translate="true">topics<keyword translate="true">cutting and pasting</keyword><keyword translate="true">moving</keyword></keyword>
+    <keyword translate="true">tutorials<keyword translate="true">organizing the TOC</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Organizing the TOC</text></para>
+    </header>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">One of the main differences between Help+Manual and a word processor is that in a word processor you work in a single document. In contrast to this, each topic in a Help+Manual project is actually an independent file that is like a word processor document. However, Help+Manual manages all these files as though they were a single document. For example, you can perform search and replace operations globally in all your topic files.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">You can move topics around in the Table of Contents (TOC) section of the Project Explorer with the keyboard and the mouse and you can also change the &quot;level&quot; topics in the TOC tree hierarchy. </text></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Table of Contents (TOC) Overview]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading Toggle_atocs_" style="text-align:left; text-indent:-19px; margin-top:10px; margin-right:0px; margin-bottom:10px; margin-left:43px; line-height:1.00; white-space:normal; page-break-inside:auto; page-break-after:auto; tabstops:none;"><image src="WIN_TOCMove1.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Moving topics around in the TOC]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Use the arrow tools in </text><text styleclass="T_Menu" translate="true">Project &gt; Manage Topics</text><text styleclass="HowTo Bulleted" translate="true"> to move selected topics around in the TOC:</text></li>
+          </list>
+          <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:10px; margin-left:60px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><image src="WIN_TOCMove2.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <list id="6" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Drag a topic </text><text styleclass="HowTo Bulleted" style="text-decoration:underline;" translate="true">onto</text><text styleclass="HowTo Bulleted" translate="true"> another topic to make it the child (sub-topic) of the target topic:</text></li>
+          </list>
+          <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:10px; margin-left:60px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><image src="TOCcopy_block.bmp" scale="100.00%" styleclass="Body Text"></image></para>
+          <list id="7" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="Body Text" style="margin-left:24px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="Body Text" style="margin-left:24px;"><text styleclass="HowTo Bulleted" translate="true">Drag a topic </text><text styleclass="HowTo Bulleted" style="text-decoration:underline;" translate="true">between</text><text styleclass="HowTo Bulleted" translate="true"> two topics to insert it between them:</text></li>
+          </list>
+          <para styleclass="" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:10px; margin-left:60px; line-height:1.00; background-color:transparent; white-space:normal; page-break-inside:auto; page-break-after:auto; border:none; tabstops:none;"><image src="TOCcopy_bar.bmp" scale="100.00%" style="font-family:Arial; font-size:11pt; color:#000000;"></image><text style="font-family:Arial; font-size:11pt; color:#000000;" translate="true">&#32;</text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Using cut and paste in the TOC]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You can also use normal cut and paste methods to move topics around in the TOC and to copy and move topics between projects. There are two ways to do this:</text></para>
+          <list id="8" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Open the second project in the current instance of Help+Manual. The second project will be displayed as an additional item in the Project Explorer and you can then cut and paste between the two projects in the Project Explorer.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Open Help+Manual a second time, open the second project there and then cut and paste between the projects.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" style="font-family:Arial; font-size:11pt; font-weight:normal; font-style:normal; text-transform:none; vertical-align:baseline; color:#000000; background-color:transparent; letter-spacing:normal; letter-scaling:100%;" translate="true">There are three different ways to cut and paste in the TOC:</text></para>
+          <list id="9" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Right-click in the TOC to display Cut, Copy and Paste options.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Use the tools in the </text><text styleclass="T_Menu" translate="true">Clipboard</text><text styleclass="HowTo Bulleted" translate="true"> group in the Ribbon.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Use </text><text styleclass="HowTo Bulleted" style="font-style:italic;" translate="true">Ctrl+X</text><text styleclass="HowTo Bulleted" translate="true"> and </text><text styleclass="HowTo Bulleted" style="font-style:italic;" translate="true">Ctrl+C</text><text styleclass="HowTo Bulleted" translate="true"> to cut or copy and </text><text styleclass="HowTo Bulleted" style="font-style:italic;" translate="true">Ctrl+V</text><text styleclass="HowTo Bulleted" translate="true"> to paste.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Managing files in the Topic Files section]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">All the topic files in your TOC are also available in the </text><text styleclass="T_Menu" translate="true">Project Files &gt; Topic Files</text><text styleclass="Body Text" translate="true"> section of the Project Explorer. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text" translate="true">These are </text><text styleclass="Body Text" style="text-decoration:underline;" translate="true">not</text><text styleclass="Body Text" translate="true"> second copies of your topic files, they are the same files! The TOC entries are really just links pointing to your topic files. The TOC shows the Table of Contents structure with links to the topic files, the Topic Files section only shows you the files.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text" translate="true">In addition to your TOC topics, the Topic Files section can also contain topic files not included in the TOC, for example topic files for popups and topics that are only accessible by clicking on hyperlinks.</text></para>
+          <para styleclass="Heading3_atocs_" style="margin-left:24px;"><text styleclass="Heading3_atocs_" translate="true">Folder display and file display in Topic Files:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">The folders in the Project Files section are just like folders in Windows Explorer. You can delete topic files and you can shift them from one folder to another if you have created multiple folders. However, there is no &quot;table of contents&quot; structure here because you are really just looking at disk folders containing lists of files. </text></para>
+          <para styleclass="Body Text HowTo"><image src="exp_files.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <para styleclass="Body Text HowTo"><image src="wn_topicfiles_edit.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

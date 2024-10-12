@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../helpproject.xsl" ?>
+<topic template="Default" modified="2022-11-11T11:51:20.428+01:00" lasteditedby="Alexander" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../helpproject.xsd">
+  <title translate="true">Importing data</title>
+  <keywords>
+    <keyword translate="true">importing external data<keyword translate="true">into existing projects</keyword><keyword translate="true">into new projects</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Importing data</text></para>
+    </header>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">You can import existing documentation into your Help+Manual projects from a wide variety of different formats. When you import data you can either create a new project or import the data into an existing project. The procedure in both cases is almost identical. </text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">When you import data an interactive wizard guides you through each step of the process. However, each data format needs to be handled a little differently. You will find important information on each format further below. </text></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Importing data to new projects]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="HowTo Numbered"><image src="mn_appqat.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Select the File menu.</text><text styleclass="HowTo Numbered" style="font-weight:bold;" translate="true">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Select the documentation format under the </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">Import existing documentation</text><text styleclass="HowTo Numbered" translate="true"> heading, then follow the instructions displayed.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Importing data into existing projects]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Click anywhere in the </text><text styleclass="T_Menu" translate="true">Table of Contents</text><text styleclass="HowTo Numbered" translate="true"> section in the Project Explorer. The data will be inserted at the end of the current Table of Contents. You can move imported chapters and topics after importing if necessary.</text><text styleclass="HowTo Numbered" style="font-weight:bold;" translate="true">&#32;</text></li>
+          </list>
+          <para styleclass="HowTo Numbered"><image src="mn_appqat.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <list id="1" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Select the File menu and click on </text><text styleclass="T_Menu" translate="true">Import</text><text styleclass="HowTo Numbered" translate="true">.</text></li>
+            <li styleclass="Body Text"><text styleclass="HowTo Numbered" translate="true">Select the documentation format, then follow the instructions displayed in the interactive wizard.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

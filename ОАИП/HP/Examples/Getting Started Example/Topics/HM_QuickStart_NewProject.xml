@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-03-04T19:17:12.258+01:00" lasteditedby="Alexander" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Creating projects</title>
+  <keywords>
+    <keyword translate="true">creating projects (tutorial)</keyword>
+    <keyword translate="true">language settings<keyword translate="true">for project</keyword></keyword>
+    <keyword translate="true">projects<keyword translate="true">creating (tutorial)</keyword></keyword>
+    <keyword translate="true">tutorials<keyword translate="true">creating projects</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Creating projects</text></para>
+    </header>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">You can create a new Help+Manual project from scratch or import documentation from another source and convert it into a new Help+Manual project. In both cases an interactive on-screen wizard will guide you through the process.</text></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Creating an empty new project]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="HowTo Numbered"><image src="mn_appqat.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Select the File menu, then select </text><text styleclass="T_Menu" translate="true">New Project</text><text styleclass="HowTo Numbered" translate="true">.</text><text styleclass="HowTo Numbered" style="font-weight:bold;" translate="true">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Select the option </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">Create an empty new project</text><text styleclass="HowTo Numbered" translate="true"> and then enter the name of your project, the save location and other data in the form displayed.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">If you have Help+Manual Professional you can choose between two save formats (you can switch formats at any time with </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">Save As..</text><text styleclass="HowTo Numbered" translate="true">. in the File menu):</text></li>
+          </list>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="margin-left:63px; font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted" style="margin-left:63px;"><text styleclass="HowTo Bulleted" style="font-weight:bold;" translate="true">Uncompressed XML:</text><br/><text styleclass="HowTo Bulleted" translate="true">Saves your project as a collection of XML files. Must be saved in an empty folder. This format is required for multi-user editing. The main project file has the extension </text><text styleclass="T_Code" translate="true">.hmxp</text><text styleclass="HowTo Bulleted" translate="true">. This is the preferred format for normal work when it is available. </text></li>
+            <li styleclass="HowTo Bulleted" style="margin-left:63px;"><text styleclass="HowTo Bulleted" style="font-weight:bold;" translate="true">Compressed single-file format:</text><br/><text styleclass="HowTo Bulleted" translate="true">Saves the same project files in a single compressed file with the extension </text><text styleclass="T_Code" translate="true">.hmxz.</text><text styleclass="HowTo Bulleted" translate="true"> This is the only format supported by the Help+Manual Basic.</text></li>
+          </list>
+          <list id="0" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Click on </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">Create</text><text styleclass="HowTo Numbered" translate="true"> to create your new project.</text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Creating a new project from imported data]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="HowTo Numbered"><image src="mn_appqat.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Select the File menu and click on </text><text styleclass="T_Menu" translate="true">New Project</text><text styleclass="HowTo Numbered" translate="true">.</text><text styleclass="HowTo Numbered" style="font-weight:bold;" translate="true">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Select the data type you want to import in the </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">Import existing documentation to a new project</text><text styleclass="HowTo Numbered" style="font-style:normal;" translate="true"> section.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Follow the instructions displayed in the interactive wizard, select your save format (see above) and then select </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">Import</text><text styleclass="HowTo Numbered" translate="true"> to complete the operation.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You can also import some formats directly by clicking on the File menu and selecting </text><text styleclass="T_Menu" translate="true">Open</text><text styleclass="Body Text" translate="true">. Then select the format type and open the file </text><text styleclass="Body Text" style="font-family:Arial;" translate="true">–</text><text styleclass="Body Text" translate="true"> additional instructions may be displayed.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">See </text><link displaytype="text" defaultstyle="true" type="topiclink" href="HM5_QuickStart_Importing" styleclass="Body Text" translate="true">Importing data</link><text styleclass="Body Text" translate="true"> for information on the different import formats.</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

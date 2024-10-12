@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" lasteditedby="alexander" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Creating hyperlinks</title>
+  <keywords>
+    <keyword translate="true">anchors<keyword translate="true">hyperlinks to</keyword></keyword>
+    <keyword translate="true">creating hyperlinks</keyword>
+    <keyword translate="true">hyperlinks<keyword translate="true">creating</keyword><keyword translate="true">to anchors</keyword></keyword>
+    <keyword translate="true">links<keyword translate="true">to anchors</keyword><keyword translate="true">tutorial</keyword></keyword>
+    <keyword translate="true">tutorials<keyword translate="true">creating hyperlinks</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Creating hyperlinks</text></para>
+    </header>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The Web without hyperlinks would be unthinkable and the same applies to interactive help and documentation. Hyperlinks between topics are what makes your help genuinely useful. You can create links to topics and specific places in topics. In addition to this you can create links to pages on the Web and external files, and you can also create special links that execute scripts.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">This tutorial shows you the basics of creating hyperlinks to topics and specific positions in topics.</text></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Create a hyperlink with drag and drop]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">This is the fastest and easiest way to create a hyperlink and it is the method that you will probably use most frequently when working on a project.</text></para>
+          <list id="3" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Select the text you want to turn into a hyperlink in the editor.</text><text styleclass="HowTo Numbered" style="font-weight:bold;" translate="true"> </text></li>
+          </list>
+          <para styleclass="Body Text HowTo" style="margin-left:48px;"><image src="WIN_Hyperlink1T.png" scale="100.00%" styleclass="Image Caption"></image></para>
+          <list id="3" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Drag the selected text to the Table of Contents (TOC) in the Project Explorer and drop it on the topic you want to link to.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">That&apos;s it, your hyperlink is finished. You can then edit the hyperlink by double-clicking on it if you wish. </text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Body Text"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Create a hyperlink manually]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="4" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Select the text you want to use as the link. (This is optional with this method – you can also create a link without selecting anything first.)</text><text styleclass="HowTo Numbered" style="font-weight:bold;" translate="true"> </text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" style="font-weight:normal;" translate="true">Select </text><text styleclass="HowTo Numbered" style="font-weight:normal; font-style:italic;" translate="true">Inset &gt; Link</text><text styleclass="HowTo Numbered" style="font-weight:normal;" translate="true"> in the </text><text styleclass="T_Menu" translate="true">Write</text><text styleclass="HowTo Numbered" style="font-weight:normal;" translate="true"> tab or press </text><text styleclass="HowTo Numbered" style="font-weight:normal; font-style:italic;" translate="true">Ctrl+L</text><text styleclass="HowTo Numbered" style="font-weight:normal;" translate="true"> to display the </text><text styleclass="HowTo Numbered" translate="true">Edit Hyperlink dialog. For the moment leave the default setting of </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">Topic Link</text><text styleclass="HowTo Numbered" translate="true"> unchanged.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo" style="margin-left:48px;"><image src="DLG_Insert_Link.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <list id="4" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Select the Topic ID of the topic you want to link to from the list below the </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">Target:</text><text styleclass="HowTo Numbered" translate="true"> field. </text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Choose a style for the link from the options on the left. </text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Click on OK to create the link. </text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Body Text"></image><tab/><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Create a hyperlink to an anchor]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">Sometimes you will want to link to a specific location in the middle of a topic instead of just displaying the top of the topic. This is achieved with </text><text styleclass="Body Text" style="font-style:italic;" translate="true">anchors</text><text styleclass="Body Text" translate="true">, which are named &quot;link targets&quot; that you can insert anywhere in a topic.</text></para>
+          <list id="5" type="ol" listtype="decimal" formatstring="%0:s." format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:'Segoe UI'; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">In the topic you want to link to, click in the position for the link target and select the </text><image src="BTN_Insert_Anchor.bmp" scale="100.00%" styleclass="Image Caption"></image><text styleclass="HowTo Numbered" translate="true"> Insert Anchor tool in </text><text styleclass="T_Menu" translate="true">Write &gt; Insert Object.</text><text styleclass="HowTo Numbered" style="font-weight:bold;" translate="true"> </text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Type a name for the anchor in the Anchor ID: field and click on OK to insert the anchor. Don&apos;t worry about the other settings in the dialog at the moment.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">Manually create a hyperlink (see above) to the topic containing the anchor.</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" translate="true">In the Insert Hyperlink dialog select the name of the anchor you want to link to from the drop-down list next to the </text><text styleclass="HowTo Numbered" style="font-style:italic;" translate="true">Target:</text><text styleclass="HowTo Numbered" translate="true"> field. </text></li>
+          </list>
+          <para styleclass="Body Text HowTo" style="margin-left:48px;"><image src="DLG_Insert_LinkAnchor.bmp" scale="100.00%" styleclass="Image Caption"></image></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You can also activate an anchor for an existing link by double-clicking on the link and selecting the anchor from the list.</text></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>

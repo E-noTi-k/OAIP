@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2020-02-10T14:25:52.377+01:00" lasteditedby="Alexander" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Using the Project Explorer</title>
+  <keywords>
+    <keyword translate="true">Project Explorer<keyword translate="true">tutorial</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Using the Project Explorer</text></para>
+    </header>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The Project Explorer is the control center for your Help+Manual projects. It displays the structure of your project with the Table of Contents (TOC), all your topic files (including those not in the TOC), additional files associated with your project (Baggage Files) and all the configuration settings saved with your project (Configuration). &#160;</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">You can open multiple projects at the same time. Each project has its own full entry in the Project Explorer. Working in the Project Explorer you can copy and paste single and multiple topics and chapters both within your project and between different projects.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">In addition to this, you can also open Help+Manual more than once and have multiple projects open in the different instances of the program. If you are working in the uncompressed HMXP format you can also have the same project open multiple times in different instances of the program.</text></para>
+    <para styleclass="Normal"><conditional-text type="IFNOT" value="PDF"/></para>
+    <para styleclass="Body Text" style="text-align:center;"><table id="overview-table" rowcount="1" colcount="1" style="width:330px; cell-padding:20px; cell-spacing:0px; page-break-inside:auto; border-width:1px; border-spacing:0px; cell-border-width:0px; border-color:#000000; border-style:solid; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td style="width:280px;">
+          <para styleclass="Heading2_atoc_" style="text-align:left; text-indent:0px; margin-top:0px; margin-right:0px; margin-bottom:10px; margin-left:0px; line-height:1.00; white-space:normal; page-break-inside:auto; page-break-after:avoid;"><image id="callout-icon" src="tipbulb.gif" scale="100.00%" styleclass="Image Caption"></image><text styleclass="Heading2_atoc_" translate="true">Using the Project Explorer</text></para>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#216;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Wingdings; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="HM_QuickStart_Explorer_Sections" styleclass="HowTo Bulleted" translate="true">Project Explorer Sections</link></li>
+            <li styleclass="HowTo Bulleted"><link displaytype="text" defaultstyle="true" type="topiclink" href="HM_QuickStart_Explorer_Navigate" styleclass="HowTo Bulleted" translate="true">Navigating in the Explorer</link></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Body Text" style="text-align:center;"><conditional-text type="END"/></para>
+  </body>
+</topic>

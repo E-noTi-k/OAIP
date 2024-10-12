@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xplainskin name="Minimalistic Skin" description="Skin with only a previous and next button">
+	<variables>
+		<var type="cdata"   name="DOCTYPE" />
+		<var type="data"    name="TITLE" />
+		<var type="data"    name="DESCRIPTION" />
+		<var type="cdata"   name="OPENGRAPH" />
+		<var type="data"    name="FAVICON" />
+		<var type="data"    name="PREVIEWIMAGE" />
+		<var type="cdata"   name="BODYCSS" />
+		<var type="data"    name="BODYSTYLE" />
+		<var type="cdata"   name="XPLAIN" />
+		<var type="cdata"   name="XPLAINSCRIPTS" />
+		<var type="cdata"   name="XPLAININIT" />
+		<var type="bool"    name="AUDIOCONTROLS" />
+		
+		<var type="bool"    name="PLAYER_CONTROLS_ALWAYSVISIBLE" default="0" />
+		<var type="display" name="PLAYER_PROGRESSBAR_DISPLAY" default="none" />
+		<var type="percent" name="PLAYER_PROGRESSBAR_HEIGHT" default="1" />
+		<var type="color"   name="PLAYER_PROGRESSBAR_COLOR" default="#FF1072C5" />
+		
+		<var type="percent" name="PLAYER_BUTTON_WIDTH" default="5" />
+		<var type="color"   name="PLAYER_BUTTON_BACKGROUND" default="#33000000" />
+		<var type="color"   name="PLAYER_BUTTON_BACKGROUND_HOVER" default="#33000000" />
+		<var type="int"     name="PLAYER_BUTTON_CORNERRADIUS" default="6" />
+		<var type="color"   name="PLAYER_BUTTON_FILLCOLOR" default="#FFFFFFFF" />
+		<var type="color"   name="PLAYER_BUTTON_STROKECOLOR" default="#00000000" />
+		<var type="int"     name="PLAYER_BUTTON_STROKEWIDTH" default="0" />
+		<var type="calc"    name="PLAYER_BUTTON_PADDING" default="<%PLAYER_BUTTON_WIDTH%>/5" />
+
+		<var type="text"    name="BUTTON_PREVIOUS_TEXT" default="Previous Slide" />
+		<var type="text"    name="BUTTON_NEXT_TEXT" default="Next Slide" />
+
+		<var type="text"    name="BUTTON_AUDIO_MUTE_TEXT" default="Mute" />
+		<var type="text"    name="BUTTON_AUDIO_UNMUTE_TEXT" default="Unmute" />
+		<var type="text"    name="BUTTON_AUDIO_UNMUTE_INFO" default="Tap or click to unmute audio." />
+		<var type="text"    name="BUTTON_AUDIO_VOLUME_TEXT" default="Volume" />
+		
+		<var type="html"    name="FALLBACK_MESSAGE" default="We are sorry, but your browser does not support HelpXplain. Please use a decent browser and turn Javascript on." />
+	</variables>
+	
+<htmlcode><![CDATA[<%DOCTYPE%>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title><%TITLE%></title>
+<meta name="description" content="<%DESCRIPTION%>" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<%OPENGRAPH%><link rel="icon" href="<%FAVICON%>" type="image/png" />
+<style type="text/css" media="screen">
+<%BODYCSS%>
+
+div.fallback {
+  position: absolute;
+  top: 20%;
+  background: #FFF;
+  opacity: 0.9;
+  font-size: 2em;
+  padding: 1em;
+  line-height: 1em
+}
+
+div#xplplayercontrols {
+	position: fixed;
+	overflow: visible;
+	<%IF:AUDIOCONTROLS%>bottom: 24pt;<%/IF:AUDIOCONTROLS%><%IFNOT:AUDIOCONTROLS%>bottom: 0;<%/IFNOT:AUDIOCONTROLS%>
+	left: 0;
+	width: 100%;
+	height: <%PLAYER_PROGRESSBAR_HEIGHT%>vH;
+	background: none;
+	opacity: 1;
+	margin: 0;
+	overflow: visible;
+	vertical-align: middle;
+	opacity: <%PLAYER_CONTROLS_ALWAYSVISIBLE%>;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+body:hover > div#xplplayercontrols {
+	opacity: 1;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+div#xplplayerprogress {
+	display: <%PLAYER_PROGRESSBAR_DISPLAY%>;
+}
+div#xplplayerprogress div {
+	height: <%PLAYER_PROGRESSBAR_HEIGHT%>vH;
+	width: 0%;
+	background: <%PLAYER_PROGRESSBAR_COLOR%>;
+}
+div#xplplayercontrols .button {
+  position: absolute;
+  top: -99vH;
+  text-decoration: none;
+  width: <%PLAYER_BUTTON_WIDTH%>%;
+  height: 100vH;
+  background: <%PLAYER_BUTTON_BACKGROUND%>;
+  opacity: 0.5;
+  cursor: pointer;
+  padding: <%PLAYER_BUTTON_PADDING%>vH;
+  line-height: 100vH;
+  vertical-align: middle;
+}
+div#xplplayerprev {
+	left: 0;
+	border-radius: 0 <%PLAYER_BUTTON_CORNERRADIUS%>px <%PLAYER_BUTTON_CORNERRADIUS%>px 0;
+}
+div#xplplayernext {
+	right: 0;
+	border-radius: <%PLAYER_BUTTON_CORNERRADIUS%>px 0 0 <%PLAYER_BUTTON_CORNERRADIUS%>px;
+}
+
+div#xplplayercontrols .disabled {
+	display: none;
+}
+
+div#xplplayercontrols .button:hover {
+  opacity: 1;
+  background: <%PLAYER_BUTTON_BACKGROUND_HOVER%>;
+}
+div#xplplayercontrols .disabled:hover {
+  opacity: 0.1;
+}
+div#xplplayercontrols svg {
+	display: inline-block;
+	width: 100%;
+}
+
+div#xplplayercontrols path {
+  fill: <%PLAYER_BUTTON_FILLCOLOR%>;
+  stroke: <%PLAYER_BUTTON_STROKECOLOR%>;
+  stroke-width: <%PLAYER_BUTTON_STROKEWIDTH%>px;
+}
+<%IF:AUDIOCONTROLS%>
+div#xplplayeraudiocontrols {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 24pt;
+	width: 100%;
+	z-index: 99;
+	background: <%PLAYER_BUTTON_BACKGROUND_HOVER%>;
+}
+div#xplplayeraudiocontrols .audiobutton {
+	position: absolute;
+	left: 8pt;
+	top: 2pt;
+	height: 18pt;
+	width: 18pt;
+}
+div#xplplayeraudioinfo {
+	position: absolute;
+	display: none;
+	opacity: 0;
+	left: 4pt;
+	bottom: 38pt;
+	width: 20vW;
+	padding: 8pt;
+	font-size: 14pt;
+	line-height: 1.2em;
+	text-align: center;
+	background: #555555;
+	color: #FFFFFF;
+	border-radius: 5pt;
+	box-shadow: 0 0 15px #c1c1c1;
+	cursor: pointer;
+}
+div#xplplayeraudioinfo:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 5pt;
+	bottom: -25pt;
+	border: 20px solid transparent;
+	border-top: 22px solid #555555;
+}
+#xplplayervolume {
+	position: absolute;
+	top: 2pt;
+	left: 36pt;
+	height: 20pt;
+	width: 50pt;
+	padding: 0;
+	vertical-align: middle;
+}
+#xplplayervolume div.range {
+	position: relative;
+	left: 0;
+	top: 40%;
+	width: 100%;
+	height: 20%; 
+	background: #555555;
+	overflow: visible;
+}
+#xplplayervolume div.bar {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #A0A0A0;
+}
+#xplplayervolume div.slider {
+	position:absolute;
+	left: 50px;
+	top: 3.5pt;
+	width: 10pt;
+	height: 10pt;
+	background: <%PLAYER_BUTTON_FILLCOLOR%>;
+	border-radius: 6pt;
+	border: 1pt solid <%PLAYER_BUTTON_FILLCOLOR%>;
+}
+#xplplayervolume div.slider:hover {
+	background: <%PLAYER_BUTTON_FILLCOLOR%>;
+	border-color: <%PLAYER_BUTTON_STROKECOLOR%>;
+}
+#xplplayeraudiocontrols svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+<%/IF:AUDIOCONTROLS%>
+div#xplplayerloading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20vH;
+  height: 20vH;
+  margin: -10vH 0 0 -10vH;
+}
+div#xplplayerloading.disabled {
+  display: none;	
+}
+svg.xplspinner {
+  animation: rotate 2s linear infinite;
+  width: 100%;
+  height: 100%;
+}
+svg.xplspinner > circle {
+    stroke: <%PLAYER_PROGRESSBAR_COLOR%>;
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+</style>
+</head>
+<body style="<%BODYSTYLE%>">
+<%XPLAIN%>
+<div id="xplplayerloading"><svg class="xplspinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg></div>
+<div id="xplplayercontrols" data-overlay="1">
+<div id="xplplayerprogress"><div id="xplplayerprogressindicator"></div></div>
+<%IF:AUDIOCONTROLS%><div id="xplplayeraudiocontrols">
+<div id="xplplayermute" class="audiobutton" title="<%BUTTON_AUDIO_MUTE_TEXT%>" onclick="xplain.enableaudio(false)">
+<svg viewBox="0 0 36 36"><path d="M9,9 L20.9999980926514,0 L20.9999980926514,36 L9,27.0000019073486 L9,9 Z M0,27.0000019073486 L5.99999904632568,27.0000019073486 L5.99999904632568,9 L0,9 L0,27.0000019073486 Z M30.3959980010986,3.12479996681213 L28.1504955291748,5.8193998336792 C30.9209976196289,9.02880001068115 32.6249961853027,13.3019981384277 32.6249961853027,18 C32.6249961853027,22.6979999542236 30.9224948883057,26.9712028503418 28.1504955291748,30.1788005828857 L30.397497177124,32.8751983642578 C33.8549995422363,28.9997997283936 36,23.7761974334717 36,17.9999980926514 C36,12.2237968444824 33.8549995422363,7.0019965171814 30.3959980010986,3.12479662895203 Z M29.6624946594238,18 C29.6624946594238,14.2488012313843 28.2899951934814,10.8594007492065 26.0864963531494,8.2962007522583 L23.831995010376,11.0016002655029 C25.3484954833984,12.8898000717163 26.2874927520752,15.3234014511108 26.2874927520752,18 C26.2874927520752,20.6784019470215 25.3529949188232,23.1138000488281 23.8364963531494,25.0037994384766 L26.090991973877,27.7091979980469 C28.2929916381836,25.1460018157959 29.6624927520752,21.7529983520508 29.6624927520752,18 Z"></path></svg>
+</div>
+<div id="xplplayerunmute" class="audiobutton disabled" title="<%BUTTON_AUDIO_UNMUTE_TEXT%>" onclick="xplain.enableaudio(true)">
+<svg viewBox="0 0 36 36"><path d="M36,1.90350139141083 L2.78100085258484,36 L0,34.0965003967285 L6.91379880905151,26.9999980926514 L3.62520051002502,26.9999980926514 L3.62520051002502,12.0000019073486 L12.5999975204468,12.0000019073486 L12.5999975204468,21.1364994049072 L16.2252025604248,17.4419994354248 L16.2252025604248,11.9999980926514 L25.8821964263916,7.52849960327148 L33.2190017700195,0 L36,1.90349996089935 Z M16.2252025604248,25.7924957275391 L16.2252025604248,26.9999980926514 L32.4000053405762,34.4999961853027 L32.4000053405762,9.19050121307373 L16.2252025604248,25.7924957275391 Z"></path></svg>
+</div>
+<div id="xplplayeraudioinfo" onclick="xplain.enableaudio(true);this.style.display='none'"><%BUTTON_AUDIO_UNMUTE_INFO%></div>
+<div id="xplplayervolume" title="<%BUTTON_AUDIO_VOLUME_TEXT%>"><div class="range"><div class="bar"></div></div><div class="slider"></div></div>
+</div><%/IF:AUDIOCONTROLS%>
+<div id="xplplayerprev" class="button" onclick="xplain.navigate(-1)">
+<svg viewBox="0 0 70 100"><path d="M0,0 M70,100 M69.4803009033203,18.6013679504395 C69.4608993530273,17.3841934204102 68.9419860839844,16.1814231872559 68.064697265625,15.3202447891235 L54.3764495849609,1.89102363586426 C53.4807357788086,1.01177537441254 52.2214241027832,0.5 50.9543876647949,0.5 C49.6873474121094,0.5 48.428035736084,1.01177537441254 47.5323219299316,1.89102303981781 L1.91785323619843,46.6423110961914 C1.02164697647095,47.521068572998 0.5,48.7565612792969 0.5,49.9996185302734 C0.5,51.24267578125 1.02164697647095,52.4781646728516 1.91785323619843,53.3569221496582 L47.5323219299316,98.1082153320313 C48.428035736084,98.9874649047852 49.6873474121094,99.4992370605469 50.9543876647949,99.4992370605469 C52.2214241027832,99.4992370605469 53.4807357788086,98.9874572753906 54.3764495849609,98.1082153320313 L68.064697265625,84.6789932250977 C68.9584121704102,83.8004837036133 69.4785690307617,82.5666961669922 69.4785690307617,81.3255920410156 C69.4785690307617,80.0844879150391 68.9584121704102,78.850715637207 68.064697265625,77.9721908569336 L39.5528182983398,49.9996185302734 L68.064697265625,22.0272846221924 C68.9768218994141,21.1319217681885 69.4994659423828,19.8668899536133 69.4803009033203,18.6013679504395 L69.4803009033203,18.6013679504395 Z"></path></svg>
+</div>
+<div id="xplplayernext" class="button" onclick="xplain.navigate(1)">
+<svg viewBox="0 0 70 100"><path d="M0,0 M70,100 M0.5191610455513,18.6013622283936 C0.538569211959839,17.3841876983643 1.05748128890991,16.18141746521 1.9347757101059,15.3202390670776 L15.6231327056885,1.8910231590271 C16.5188522338867,1.01177525520325 17.7781753540039,0.5 19.045223236084,0.5 C20.3122711181641,0.5 21.5715942382813,1.01177525520325 22.4673137664795,1.89102256298065 L68.0821304321289,46.6422958374023 C68.9783477783203,47.521053314209 69.5,48.7565422058105 69.5,49.9995994567871 C69.5,51.2426567077637 68.9783477783203,52.4781455993652 68.0821304321289,53.3569030761719 L22.4673137664795,98.1081771850586 C21.5715942382813,98.9874267578125 20.3122711181641,99.4991989135742 19.045223236084,99.4991989135742 C17.7781753540039,99.4991989135742 16.5188522338867,98.987419128418 15.6231327056885,98.1081771850586 L1.9347757101059,84.6789627075195 C1.04105448722839,83.8004531860352 0.520896136760712,82.5666656494141 0.520896136760712,81.3255615234375 C0.520896136760712,80.0844573974609 1.04105448722839,78.8506851196289 1.9347757101059,77.9721603393555 L30.4468784332275,49.9995994567871 L1.9347757101059,22.0272769927979 C1.02264547348022,21.1319141387939 0.5,19.8668823242188 0.5191610455513,18.6013622283936 L0.5191610455513,18.6013622283936 Z"></path></svg>
+</div>
+
+
+</div>
+<div id="fallbackmessage" style="display:none;margin:0 auto">
+<img src="<%PREVIEWIMAGE%>" style="width:100%" />
+<div class="fallback"><%FALLBACK_MESSAGE%></div>
+</div>
+<%XPLAINSCRIPTS%>
+<script>
+<%XPLAININIT%>
+</script>
+<noscript><div style="margin: 0 auto; text-align:center">
+<img src="<%PREVIEWIMAGE%>" style="width:100%" />
+<div class="fallback"><%FALLBACK_MESSAGE%></div>
+</div></noscript>
+</body>
+</html>
+]]></htmlcode>
+</xplainskin>

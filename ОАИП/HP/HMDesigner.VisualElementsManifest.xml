@@ -1,0 +1,11 @@
+<Application xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+<VisualElements
+      ShowNameOnSquare150x150Logo='on'
+      Square150x150Logo='HMDesigner_Startmenu_Icon.png'
+      Square70x70Logo='HMDesigner_Startmenu_Icon.png'
+	  DisplayName='Manual Designer'
+	  Description='Help+Manual Print Manual Designer'
+      ForegroundText='light'
+      BackgroundColor='#343434'>
+</VisualElements>  
+</Application>

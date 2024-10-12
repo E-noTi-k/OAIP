@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../helpproject.xsl" ?>
+<topic template="Default" modified="2024-03-04T19:17:50.829+01:00" lasteditedby="Alexander" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../helpproject.xsd">
+  <title translate="true">Editing topics</title>
+  <keywords>
+    <keyword translate="true">copying, cutting and pasting<keyword translate="true">from Word</keyword></keyword>
+    <keyword translate="true">editing topics</keyword>
+    <keyword translate="true">font size preview<keyword translate="true">changing</keyword></keyword>
+    <keyword translate="true">formatting text</keyword>
+    <keyword translate="true">live spell checking</keyword>
+    <keyword translate="true">MS Word<keyword translate="true">copying and pasting from/to</keyword></keyword>
+    <keyword translate="true">Project Explorer panes<keyword translate="true">split view</keyword></keyword>
+    <keyword translate="true">spell checking<keyword translate="true">live spell checking</keyword></keyword>
+    <keyword translate="true">styles preview mode (screen/print)</keyword>
+    <keyword translate="true">tutorials<keyword translate="true">entering and editing text</keyword></keyword>
+    <keyword translate="true">Word<keyword translate="true">copying and pasting from/to</keyword></keyword>
+  </keywords>
+  <body>
+    <header>
+      <para styleclass="Heading1"><text styleclass="Heading1" translate="true">Editing topics</text></para>
+    </header>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">Entering and editing text in your topics in Help+Manual is very similar to working in a word processor. To edit a topic select the topic in the Table of Contents or Project Files section of the Project Explorer, then click inside the editing window to start editing.</text></para>
+    <para styleclass="Body Text"><text styleclass="Body Text" translate="true">The Write tab in the Ribbon provides direct access to all the tools you need while you are editing. The only group inside this section that may be unfamiliar to word processor users is the Insert group, which contains special tools and objects used in help authoring projects. </text></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo_atoc_" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Editing overview]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">You can type and enter text and copy and paste from other programs just as you would in a normal word processor.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" style="font-weight:bold;" translate="true">Double-click</text><text styleclass="HowTo Bulleted" translate="true"> to select a word, </text><text styleclass="HowTo Bulleted" style="font-weight:bold;" translate="true">triple-click</text><text styleclass="HowTo Bulleted" translate="true"> to select an entire paragraph.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">Use the tools in the Font and Paragraph groups in the </text><text styleclass="T_Menu" translate="true">Write</text><text styleclass="HowTo Bulleted" translate="true"> tab to format text. Select text to apply new formatting, select a formatting option (Bold, Italic etc.) and type to change formatting from the current cursor position. </text></li>
+          </list>
+          <list id="1" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">The Font and Paragraph groups have additional dialog modes that you can display by clicking on the little icons in their bottom right corners.</text></li>
+          </list>
+          <para styleclass="HowTo Bulleted"><image src="dialog_icon.bmp" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <list id="0" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Bulleted" translate="true">Hover the mouse pointer over the tools in the </text><text styleclass="T_Menu" translate="true">Write</text><text styleclass="HowTo Bulleted" translate="true"> tab of the Ribbon for descriptions.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Numbered" translate="true">You can save a lot of time and work by using styles. See the </text><link displaytype="text" defaultstyle="true" type="topiclink" href="HM_QuickStart_Styles" styleclass="HowTo Numbered" translate="true">Using styles</link><text styleclass="HowTo Numbered" translate="true"> tutorial. </text></li>
+          </list>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Spell checking]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Heading3_atocs_" style="margin-left:24px;"><text styleclass="Heading3_atocs_" style="background-color:transparent;" translate="true">Live spell checking:</text></para>
+          <list id="2" type="ol" listtype="decimal" formatstring="&#37;&#48;&#58;&#115;&#46;" format-charset="DEFAULT_CHARSET" levelreset="false" legalstyle="false" startfrom="1" styleclass="HowTo Numbered" style="font-family:&apos;Segoe UI&apos;; font-size:11pt; font-weight:bold; color:#000000;">
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" style="background-color:transparent;" translate="true">Select </text><text styleclass="T_Menu" translate="true">Project &gt; Spelling &gt; Configure Spell Checker</text><text styleclass="HowTo Numbered" style="background-color:transparent;" translate="true"> and select the dictionary for the language you want to use in the Main Dictionaries section at the bottom of the dialog. Select </text><text styleclass="HowTo Numbered" style="font-style:italic; background-color:transparent;" translate="true">Download dictionaries</text><text styleclass="HowTo Numbered" style="background-color:transparent;" translate="true"> to get additional dictionaries.</text><text styleclass="HowTo Numbered" style="font-weight:bold; background-color:transparent;" translate="true">&#32;</text></li>
+            <li styleclass="HowTo Numbered"><text styleclass="HowTo Numbered" style="background-color:transparent;" translate="true">Activate the </text><text styleclass="HowTo Numbered" style="font-style:italic; background-color:transparent;" translate="true">Check spelling as you type</text><text styleclass="HowTo Numbered" style="background-color:transparent;" translate="true"> option. Misspelled words will then be underlined in red as you type.</text></li>
+          </list>
+          <para styleclass="Heading3_atocs_" style="margin-left:24px;"><text styleclass="Heading3_atocs_" style="background-color:transparent;" translate="true">Manual spell checking:</text></para>
+          <para styleclass="Body Text HowTo"><image src="RB_Speller.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+          <list id="3" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" style="background-color:transparent;" translate="true">Select the </text><text styleclass="HowTo Bulleted" style="text-decoration:underline; background-color:transparent;" translate="true">top</text><text styleclass="HowTo Bulleted" style="background-color:transparent;" translate="true"> half of the </text><text styleclass="HowTo Bulleted" style="font-style:italic; background-color:transparent;" translate="true">Spelling</text><text styleclass="HowTo Bulleted" style="background-color:transparent;" translate="true"> tool in the </text><text styleclass="T_Menu" translate="true">Project</text><text styleclass="HowTo Bulleted" style="background-color:transparent;" translate="true"> tab to check the current topic or text entry field or window. If text is selected only the selected text will be checked.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" style="background-color:transparent;" translate="true">Select the </text><text styleclass="HowTo Bulleted" style="text-decoration:underline; background-color:transparent;" translate="true">bottom</text><text styleclass="HowTo Bulleted" style="background-color:transparent;" translate="true"> half of the tool for the spell-check menu.</text></li>
+          </list>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" style="background-color:transparent;" translate="true">Spell checking is supported almost everywhere in Help+Manual where you can enter text. Just right-click to display the context menu or click on the upper half of the </text><text styleclass="Body Text HowTo" style="font-style:italic; background-color:transparent;" translate="true">Spelling</text><text styleclass="Body Text HowTo" style="background-color:transparent;" translate="true"> tool in the </text><text styleclass="T_Menu" translate="true">Project</text><text styleclass="Body Text HowTo" style="background-color:transparent;" translate="true"> tab to access. </text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Body Text" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Copying and pasting]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <list id="4" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">You can copy and paste text just as you would in a normal word processor. This works within topics, between topics and between projects. </text></li>
+          </list>
+          <list id="5" type="ul" listtype="bullet" formatstring="&#183;" format-charset="SYMBOL_CHARSET" levelreset="true" legalstyle="false" startfrom="1" styleclass="HowTo Bulleted" style="font-family:Symbol; font-size:11pt; color:#000000;">
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">You can open multiple projects and copy and paste between them, or you can open Help+Manual a second time and copy and paste between the two windows.</text></li>
+            <li styleclass="HowTo Bulleted"><text styleclass="HowTo Bulleted" translate="true">You can copy and paste formatted text from and to other programs, including Office programs like MS Word and MS Excel.</text></li>
+          </list>
+          <para styleclass="Heading3_atocs_" style="margin-left:24px;"><text styleclass="Heading3_atocs_" translate="true">Copying images from Word:</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">When you copy text with images from MS Word a dialog will be displayed prompting you to convert the embedded image data to an external graphics file. Always do this, or right-click on the image afterward and convert the image into an external file. Otherwise the image will be embedded in your topic file and will take up too much space. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">If you have many embedded images you may experience slow editing performance in the single-file HMXZ format. Even if you don&apos;t, embedded images unnecessarily bloat your topic files and should be avoided if possible. </text></para>
+        </td>
+      </tr>
+    </table></para>
+    <para styleclass="Heading HowTo Toggle_atoc_"><image src="tog_plus.gif" scale="100.00%" styleclass="Heading HowTo Toggle_atoc_" figurelistinclude="0"></image><tab /><toggle type="dropdown" print-expanded="true" help-expanded="false" defaultstyle="false" translate="true" src-collapsed="tog_plus.gif" src-expanded="tog_minus.gif" src-print="none" styleclass="Heading HowTo Toggle_atoc_"><caption translate="true"><![CDATA[Editor zoom and preview mode for screen/print styles and font sizes]]></caption><title translate="true">&lt;%EXTOGGLE%&gt;</title></toggle></para>
+    <para styleclass="Body Text"><table rowcount="1" colcount="1" style="width:auto; cell-padding:0px; cell-spacing:0px; page-break-inside:auto; border-width:0px; border-spacing:0px; cell-border-width:0px; border-style:none; background-color:none; head-row-background-color:none; alt-row-background-color:none;">
+      <tr style="vertical-align:top">
+        <td>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You can zoom the entire contents of the editor quickly with the Zoom control in the status bar below the editor window. This control is also available in the </text><text styleclass="T_Menu" translate="true">View</text><text styleclass="Body Text HowTo" translate="true"> tab in the ribbon toolbar.</text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">You can also switch the editor display between the styles defined for </text><text styleclass="Body Text" translate="true">electronic help formats (HTML Help, WebHelp, Visual Studio Help and EWriter eBooks) print-style help formats (PDF, printed manuals, Word DOCX and ePUB and Kindle Mobi eBooks)</text><text styleclass="Body Text HowTo" translate="true">. </text></para>
+          <para styleclass="Body Text HowTo"><text styleclass="Body Text HowTo" translate="true">This will only have an effect if you have defined different settings for screen and print output in your style definitions.</text></para>
+          <para styleclass="Heading3_atocs_" style="margin-left:24px;"><text styleclass="Heading3_atocs_" translate="true">Display buttons in the status bar:</text></para>
+          <para styleclass="Body Text HowTo"><image src="WIN_dpi.png" scale="100.00%" styleclass="Image Caption" figurelistinclude="0"></image></para>
+        </td>
+      </tr>
+    </table></para>
+  </body>
+</topic>
